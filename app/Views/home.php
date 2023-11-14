@@ -61,7 +61,7 @@
                         <a href="#alur" class="nav-item nav-link">Alur</a>
                         <a href="#media_patner" class="nav-item nav-link">Media Patner</a>
                         <a href="#contact" class="nav-item nav-link">Contact</a>
-                        <a href="<?=base_url()?>login" class="nav-item nav-link">Login</a>
+                        <a href="<?=base_url()?>auth/login" class="nav-item nav-link">Login</a>
                     </div>
                     <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
                         data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
