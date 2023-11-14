@@ -18,6 +18,166 @@ FilePond.create(document.querySelector(".basic-filepond"), {
   required: false,
   storeAsFile: true,
 })
+FilePond.create(document.querySelector(".basic-filepond1"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
+FilePond.create(document.querySelector(".basic-filepond2"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
+FilePond.create(document.querySelector(".basic-filepond3"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
+FilePond.create(document.querySelector(".basic-filepond4"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
+FilePond.create(document.querySelector(".basic-filepond5"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
+FilePond.create(document.querySelector(".basic-filepond6"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
+FilePond.create(document.querySelector(".basic-filepond7"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
+FilePond.create(document.querySelector(".basic-filepond8"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
+FilePond.create(document.querySelector(".basic-filepond9"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
+FilePond.create(document.querySelector(".basic-filepond10"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
+FilePond.create(document.querySelector(".basic-filepond11"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
+FilePond.create(document.querySelector(".basic-filepond11"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
+FilePond.create(document.querySelector(".basic-filepond12"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
+FilePond.create(document.querySelector(".basic-filepond13"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
+FilePond.create(document.querySelector(".basic-filepond14"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
+FilePond.create(document.querySelector(".basic-filepond15"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
+FilePond.create(document.querySelector(".basic-filepond16"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
+FilePond.create(document.querySelector(".basic-filepond17"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
+FilePond.create(document.querySelector(".basic-filepond18"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
+FilePond.create(document.querySelector(".basic-filepond19"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  required: false,
+  storeAsFile: true,
+})
 
 // Filepond: Multiple Files
 FilePond.create(document.querySelector(".multiple-files-filepond"), {
@@ -86,7 +246,9 @@ FilePond.create(document.querySelector(".imgbb-filepond"), {
               close: true,
               gravity: "bottom",
               position: "right",
-              backgroundColor: "#4fbe87",
+              style: {
+                background: '#4fbe87'
+              }
             }).showToast()
           } else {
             Toastify({
@@ -95,7 +257,9 @@ FilePond.create(document.querySelector(".imgbb-filepond"), {
               close: true,
               gravity: "bottom",
               position: "right",
-              backgroundColor: "#ff0000",
+              style: {
+                background: '#ff0000'
+              }
             }).showToast()
           }
         }
