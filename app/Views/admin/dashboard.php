@@ -6,7 +6,7 @@
     <h3><?= $title ?></h3>
 </div> 
 <section class="row"> 
-  kosong media
+  kosong admin
 </section>
 
 <?= $this->endSection() ?>

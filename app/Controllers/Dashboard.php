@@ -3,13 +3,17 @@
 namespace App\Controllers;
 
 class Dashboard extends BaseController
-{
-    public function index(): string
+{ 
+    public function index()
     {
         $data = [
             'title' => 'Dashboard',
             'active' => 'dashboard'
         ];
-        return view('media/dashboard', $data);
+        if (session()->get('level') == 'admin') {
+            return view('admin/dashboard', $data);
+        }else if(session()->get('level') == 'media'){
+            return view('media/dashboard', $data);
+        }
     }
 }

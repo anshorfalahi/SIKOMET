@@ -26,16 +26,16 @@
                 </a>
             </li>
             <li class="sidebar-item has-sub">
-                  <a href="#" class='sidebar-link'>
-                      <i class="bi bi-grid-1x2"></i>
-                      <span>Berita</span>
-                  </a>
+                    <a href="#" class='sidebar-link'>
+                        <i class="bi bi-grid-1x2"></i>
+                        <span>Berita</span>
+                    </a>
                 <ul class="submenu">
                     <li class="sidebar-item <?= ($active == 'daftar_berita') ? 'active' : '' ?>">
-                      <a href="daftar_berita" class='sidebar-link'>
-                          <i class="bi bi-newspaper"></i>
-                          <span>Daftar Berita</span>
-                      </a>
+                    <a href="daftar_berita" class='sidebar-link'>
+                        <i class="bi bi-newspaper"></i>
+                        <span>Daftar Berita</span>
+                    </a>
                     <li class="sidebar-item <?= ($active == 'upload_berita') ? 'active' : '' ?>">
                         <a href="upload_berita" class='sidebar-link'>
                             <i class="bi bi-cloud-upload"></i>
@@ -45,7 +45,7 @@
                 </ul>
             </li>
             <li class="sidebar-item ">
-                <a href="profile" class='sidebar-link'>
+                <a href="auth/logout" class='sidebar-link'>
                     <i class="bi bi-box-arrow-left"></i>
                     <span>Log out</span>
                 </a>

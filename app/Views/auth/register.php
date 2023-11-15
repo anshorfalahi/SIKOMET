@@ -29,9 +29,9 @@
 
             <form action="index.html">
                 <div class="form-group position-relative has-icon-left mb-4">
-                    <input type="text" class="form-control form-control-xl" placeholder="Email">
+                    <input type="text" class="form-control form-control-xl" placeholder="Nama Media">
                     <div class="form-control-icon">
-                        <i class="bi bi-envelope"></i>
+                        <i class="bi bi-easel2"></i>
                     </div>
                 </div>
                 <div class="form-group position-relative has-icon-left mb-4">

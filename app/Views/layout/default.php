@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Mazer Admin Dashboard</title>
     
-    <link rel="shortcut icon" href="<?=base_url()?>assets/compiled/svg/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="<?=base_url()?>assets/freeuser/img/logo.jpg" type="image/x-icon">
+
     
   <link rel="stylesheet" href="<?=base_url()?>assets/compiled/css/app.css">
   <link rel="stylesheet" href="<?=base_url()?>assets/compiled/css/app-dark.css">
@@ -58,7 +59,12 @@
         </div>
     </div>
     <div class="sidebar-menu">
-      <?= $this->include('layout/sidebar_media') ?>
+    
+    <?php  if(session()->get('level') == 'admin'){  ?>
+    <?= $this->include('layout/sidebar_admin') ?><?php } ?>
+    <?php  if(session()->get('level') == 'media'){  ?>
+    <?= $this->include('layout/sidebar_media') ?><?php } ?>
+
     </div>
 </div>
         </div>
