@@ -21,7 +21,7 @@
                                 <div class="form-body">
                                     <div class="row">
                                         <div class="col-md-3">
-                                            <label for="first-name-horizontal-icon">Nama Media</label>
+                                            <label for="first-name-horizontal-icon"><b>Nama Media</b></label>
                                         </div>
                                         <div class="col-md-9">
                                             <div class="form-group has-icon-left">
@@ -35,7 +35,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-3">
-                                            <label for="email-horizontal-icon">Nama Instansi / PT</label>
+                                            <label for="email-horizontal-icon"><b>Nama Instansi / PT</b></label>
                                         </div>
                                         <div class="col-md-9">
                                             <div class="form-group has-icon-left">
@@ -49,7 +49,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-3">
-                                            <label for="contact-info-horizontal-icon">Jenis Instansi</label>
+                                            <label for="contact-info-horizontal-icon"><b>Jenis Instansi</b></label>
                                         </div>
                                         <div class="col-md-9">
                                             <div class="form-group has-icon-left">
@@ -66,7 +66,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-3">
-                                            <label for="password-horizontal-icon">Penanggung Jawab</label>
+                                            <label for="password-horizontal-icon"><b>Penanggung Jawab</b></label>
                                         </div>
                                         <div class="col-md-9">
                                             <div class="form-group has-icon-left">
@@ -79,7 +79,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-3">
-                                            <label for="password-horizontal-icon">Nomer HP</label>
+                                            <label for="password-horizontal-icon"><b>Nomer HP</b></label>
                                         </div>
                                         <div class="col-md-9">
                                             <div class="form-group has-icon-left">
@@ -92,7 +92,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-3">
-                                            <label for="password-horizontal-icon">Alamat</label>
+                                            <label for="password-horizontal-icon"><b>Alamat</b></label>
                                         </div>
                                         <div class="col-md-9">
                                             <div class="form-group has-icon-left">
@@ -105,7 +105,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-3">
-                                            <label for="password-horizontal-icon">Logo Media</label>
+                                            <label for="password-horizontal-icon"><b>Logo Media</b></label>
                                         </div>
                                         <div class="col-md-9">
                                           <div class="form-group has-icon-left">
