@@ -34,6 +34,7 @@ class Auth extends BaseController
         if ($data) {
             $session = session();
             $session->set([
+                'id_akun' => $data['id_akun'],
                 'username' => $data['username'],
                 'level' => $data['level'],
                 'logged_in' => TRUE
