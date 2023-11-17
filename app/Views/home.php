@@ -124,13 +124,11 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div>
-                    <h1 class="mb-4">We Make Your Business Smarter with Artificial Intelligence</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet</p>
-                    <p class="mb-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no
-                        labore lorem sit. Sanctus clita duo justo et tempor.</p>
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Tentang Us</div>
+                    <h1 class="mb-4">Apa itu SIKOMET?</h1>
+                    <p class="mb-4">SIKOMET (Sistem Informasi Komunikasi Media Secara Elektronik) merupakan inovasi dari Dinas Komunikasi Informatika
+                            Statistik & Persandian Kabupaten Banjar, dalam rangka menjalankan tugas kerjasama media Pemerintah Kabupaten Banjar
+                            dengan media partner, secara transparan, efektif dan efisien.</p>
                     <div class="row g-3">
                         <div class="col-sm-6">
                             <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Award Winning</h6>
@@ -160,7 +158,7 @@
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Services</div>
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Alur Aplikasi</div>
                     <h1 class="mb-4">Our Excellent AI Solutions for Your Business</h1>
                     <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
                         amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
@@ -233,60 +231,23 @@
     <div class="container-fluid bg-light py-5" id="media_patner">
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
-                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Case Study</div>
-                <h1 class="mb-4">Explore Our Recent AI Case Studies</h1>
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Media Patner</div>
+                <h1 class="mb-4">Media Yang Bekerja Sama</h1>
             </div>
             <div class="row g-4">
-                <div class="col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                <?php 
+                $delay = 0.0;
+                foreach($media as $m):?>
+                <div class="col-lg-3 wow fadeIn" data-wow-delay="<?php echo $delay+= 0.1; ?>s">
                     <div class="case-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="<?=base_url()?>assets/freeuser/img/info_publik (Custom).png" alt="">
-                        <a class="case-overlay text-decoration-none" href="https://infopublik.banjarkab.go.id">
-                            <h5 class="lh-base text-white mb-3">Info Public
-                            </h5>
+                        <img class="img-fluid" src="<?=base_url()?>assets/img/logo_media/<?=$m['logo_media']?>">
+                        <a class="case-overlay text-decoration-none" href="<?php echo $m['link_media']?>">
+                            <h5 class="lh-base text-white mb-3"><?php echo $m['nama_media']?></h5>
                             <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="case-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="<?=base_url()?>assets/freeuser/img/rsb.png" alt="">
-                        <a class="case-overlay text-decoration-none" href="https://rsb.banjarkab.go.id/">
-                            <h5 class="lh-base text-white mb-3">Radio Suara Banjar
-                            </h5>
-                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <div class="case-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="<?=base_url()?>assets/freeuser/img/info_publik (Custom).png" alt="">
-                        <a class="case-overlay text-decoration-none" href="https://home.banjarkab.go.id/">
-                            <h5 class="lh-base text-white mb-3">Home Kab Banjar
-                            </h5>
-                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 wow fadeIn" data-wow-delay="0.9s">
-                    <div class="case-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="<?=base_url()?>assets/freeuser/img/kp.png" alt="">
-                        <a class="case-overlay text-decoration-none" href="https://kalimantanpost.com/">
-                            <h5 class="lh-base text-white mb-3">Kalimantan Post
-                            </h5>
-                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 wow fadeIn" data-wow-delay="0.9s">
-                    <div class="case-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="<?=base_url()?>assets/freeuser/img/tribun.png" alt="">
-                        <a class="case-overlay text-decoration-none" href="https://banjarmasin.tribunnews.com/">
-                            <h5 class="lh-base text-white mb-3">Tribun Banjarmasin
-                            </h5>
-                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
-                        </a>
-                    </div>
-                </div>
+                <?php endforeach;?>
             </div>
         </div>
     </div>

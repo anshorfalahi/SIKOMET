@@ -25,6 +25,11 @@
                                     <?= session()->getFlashdata('success') ?>
                                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" style="float: right;"></button>
                                 </div>
+                                <?php elseif(session()->getFlashdata('error')): ?>
+                                <div class="alert alert-danger" role="alert" >
+                                    <?= session()->getFlashdata('error') ?>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" style="float: right;"></button>
+                                </div>
                             <?php endif; ?>
                             <form class="form form-horizontal" action="<?= site_url('profile_media/update') ?>" method="POST" enctype="multipart/form-data"> 
                                 <div class="form-body">
@@ -56,6 +61,19 @@
                                             </div>
                                         </div>
                                         <div class="col-md-3">
+                                            <label for="password-horizontal-icon"><b>Link Media</b></label>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="form-group has-icon-left">
+                                                <div class="position-relative">
+                                                    <input type="text" class="form-control" name='link_media' value="<?= $profile_media->link_media ?>">
+                                                    <div class="form-control-icon">
+                                                        <i class="bi bi-link-45deg"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
                                             <label for="contact-info-horizontal-icon"><b>Jenis Instansi</b></label>
                                         </div>
                                         <div class="col-md-9">
@@ -77,6 +95,19 @@
                                                     <input type="text" class="form-control" name='penanggung_jawab' value="<?= $profile_media->penanggung_jawab ?>">
                                                     <div class="form-control-icon">
                                                         <i class="bi bi-person"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="password-horizontal-icon"><b>Jabatan</b></label>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="form-group has-icon-left">
+                                                <div class="position-relative">
+                                                    <input type="text" class="form-control" name='jabatan' value="<?= $profile_media->jabatan ?>">
+                                                    <div class="form-control-icon">
+                                                        <i class="bi bi-x-diamond"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -115,7 +146,7 @@
                                             <div class="position-relative">
                                                 <input type="file" name="logo_media" class="image-preview-filepond" value="<?= base_url()?>assets/img/logo_media/<?= $profile_media->logo_media ?>">
                                                 <img name="logo_old"src="<?= base_url()?>assets/img/logo_media/<?= $profile_media->logo_media ?>" alt="" width="100px" height="100px">
-                                                <p>JPG,PNG,JPEG 512x512</p>
+                                                <p>JPG,PNG,JPEG, Max 512x512, Usahakan 1:1</p>
                                             </div>
                                         </div>
                                         </div>
@@ -133,7 +164,7 @@
 </section>
 <script src="<?=base_url()?>assets/compiled/js/app.js"></script>
 
-<script src="<?=base_url()?>assets/extensions/filepond-plugin-file-validate-size/filepond-plugin-file-validate-size.min.js"></script>
+<script src="<?=base_url()?>assets/extensions/filepond-plugin-file-validate-size/filepond-plugin-file-validate-size.js"></script>
 <script src="<?=base_url()?>assets/extensions/filepond-plugin-file-validate-type/filepond-plugin-file-validate-type.min.js"></script>
 <script src="<?=base_url()?>assets/extensions/filepond-plugin-image-crop/filepond-plugin-image-crop.min.js"></script>
 <script src="<?=base_url()?>assets/extensions/filepond-plugin-image-exif-orientation/filepond-plugin-image-exif-orientation.min.js"></script>

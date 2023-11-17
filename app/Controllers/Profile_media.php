@@ -27,8 +27,10 @@ class Profile_media extends BaseController
             $data = [
                 'nama_media' => $this->request->getPost('nama_media'),
                 'nama_instansi' => $this->request->getPost('nama_instansi'),
+                'link_media' => $this->request->getPost('link_media'),
                 'jenis_media' => $this->request->getPost('jenis_media'),
                 'penanggung_jawab' => $this->request->getPost('penanggung_jawab'),
+                'jabatan' => $this->request->getPost('jabatan'),
                 'no_hp' => $this->request->getPost('no_hp'),
                 'alamat' => $this->request->getPost('alamat')
             ];
@@ -38,6 +40,21 @@ class Profile_media extends BaseController
 
             return redirect()->to(site_url('profile_media'))->with('success', 'Data Berhasil Diubah');
         }
+
+        //validation logo
+        $validation_logo = $this->validate([
+            'logo_media' => [
+                'rules' => 'max_dims[logo_media,1024,1024]',
+                'error' => 'Ukuran Gambar Terlalu Besar'
+            ]
+        ]);
+        if(!$validation_logo){
+            return redirect()->to(site_url('profile_media'))->with('error', 'Ukuran Gambar Terlalu Besar');
+        }else{
+            $logo_media->move('assets/img/logo_media');
+        }
+
+
         //find logo old and delete
         $query = $this->db->table('tb_profile_media');
         $query->where('id_akun', $id_akun);
@@ -45,16 +62,18 @@ class Profile_media extends BaseController
         if($logo_old != 'blank.png'){
             unlink('assets/img/logo_media/'.$logo_old);
         }
+
         
         //move logo new
-        $logo_media->move('assets/img/logo_media');
 
         // $data = $this->request->getPost();
         $data = [
             'nama_media' => $this->request->getPost('nama_media'),
             'nama_instansi' => $this->request->getPost('nama_instansi'),
+            'link_media' => $this->request->getPost('link_media'),
             'jenis_media' => $this->request->getPost('jenis_media'),
             'penanggung_jawab' => $this->request->getPost('penanggung_jawab'),
+            'jabatan' => $this->request->getPost('jabatan'),
             'no_hp' => $this->request->getPost('no_hp'),
             'alamat' => $this->request->getPost('alamat'),
             'logo_media' => $logo_media->getName()

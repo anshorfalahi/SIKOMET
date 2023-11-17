@@ -274,6 +274,8 @@ FilePond.create(document.querySelector(".imgbb-filepond"), {
 // Filepond: Image Preview
 FilePond.create(document.querySelector(".image-preview-filepond"), {
   credits: null,
+  allowFileSizeValidation : true,
+  maxFileSize: "2MB",
   allowImagePreview: true,
   allowImageFilter: false,
   allowImageExifOrientation: false,
