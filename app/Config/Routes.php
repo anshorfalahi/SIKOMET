@@ -12,6 +12,7 @@ $routes->get('/auth/login', 'Auth::login', ['filter' => 'redirectIfAuthenticated
 $routes->get('/auth/register', 'Auth::register', ['filter' => 'redirectIfAuthenticated']);
 $routes->get('/auth/logout', 'Auth::logout');
 $routes->post('/auth/loginProccess', 'Auth::loginProccess');
+$routes->post('/auth/registerProccess', 'Auth::registerProccess');
 
 $routes->get('/dashboard', 'Dashboard::index', ['filter' => 'authenticate']);
 

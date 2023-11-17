@@ -20,4 +20,15 @@ class MAuth extends Model
 
         return null;
     }
+
+    public function registerUser($data)
+    {
+        $this->insert($data);
+    }
+
+    public function getIdAkunInRegister($username)
+    {
+        $query = $this->select('id_akun')->where('username', $username)->get();
+        return $query->getRowArray();
+    }
 }

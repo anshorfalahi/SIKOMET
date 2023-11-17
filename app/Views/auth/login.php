@@ -41,6 +41,8 @@
                 <?php
                     if (session()->has('error')) {
                         echo '<p style="color:red">' . session('error') . '</p>';
+                    }elseif (session()->has('success')) {
+                        echo '<p style="color:green">' . session('success') . '</p>';
                     }
                 ?>
                 <button class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Log in</button>
