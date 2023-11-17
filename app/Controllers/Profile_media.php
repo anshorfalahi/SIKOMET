@@ -41,15 +41,23 @@ class Profile_media extends BaseController
             return redirect()->to(site_url('profile_media'))->with('success', 'Data Berhasil Diubah');
         }
 
-        //validation logo
+        //validation logo ratio 
+        $logo_widht = getimagesize($logo_media)[0];
+        $logo_height = getimagesize($logo_media)[1];
+
+        if($logo_widht != $logo_height){
+            return redirect()->to(site_url('profile_media'))->with('error', 'Logo harus berbentuk persegi (1:1)');
+        }
+
+        //validation logo pixel
         $validation_logo = $this->validate([
             'logo_media' => [
                 'rules' => 'max_dims[logo_media,1024,1024]',
-                'error' => 'Ukuran Gambar Terlalu Besar'
             ]
         ]);
+
         if(!$validation_logo){
-            return redirect()->to(site_url('profile_media'))->with('error', 'Ukuran Gambar Terlalu Besar');
+            return redirect()->to(site_url('profile_media'))->with('error', 'Logo tidak boleh lebih dari 1024x1024 pixel');
         }else{
             $logo_media->move('assets/img/logo_media');
         }
