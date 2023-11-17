@@ -4,7 +4,7 @@ namespace App\Controllers;
 use App\Models\MProfileMedia;
 
 
-class Profile_media extends BaseController
+class ProfileMedia extends BaseController
 {
     public function index(){
         $builder = $this->db->table('tb_profile_media');

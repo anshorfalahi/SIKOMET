@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class Upload_Berkas extends BaseController
+class UploadBerkas extends BaseController
 {
     public function index(): string
     {

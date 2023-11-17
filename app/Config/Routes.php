@@ -16,7 +16,7 @@ $routes->post('/auth/registerProccess', 'Auth::registerProccess');
 
 $routes->get('/dashboard', 'Dashboard::index', ['filter' => 'authenticate']);
 
-$routes->get('/profile_media', 'Profile_media::index', ['filter' => 'authenticate']);
-$routes->post('/profile_media/update', 'Profile_media::update', ['filter' => 'authenticate']);
+$routes->get('/profile_media', 'ProfileMedia::index', ['filter' => 'authenticate']);
+$routes->post('/profile_media/update', 'ProfileMedia::update', ['filter' => 'authenticate']);
 
-$routes->get('/upload_berkas', 'Upload_Berkas::index', ['filter' => 'authenticate']);
+$routes->get('/upload_berkas', 'UploadBerkas::index', ['filter' => 'authenticate']);
