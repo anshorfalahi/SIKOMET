@@ -9,7 +9,7 @@
                 </a>
             </li>
             <li class="sidebar-item <?= ($active == 'profile') ? 'active' : '' ?>">
-                <a href="profile" class='sidebar-link'>
+                <a href="list_profile_media" class='sidebar-link'>
                     <i class="bi bi-person"></i>
                     <span>Profile Media Patner</span>
                 </a>
