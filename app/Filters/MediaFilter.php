@@ -6,7 +6,7 @@ use CodeIgniter\Filters\FilterInterface;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class RedirectIfAuthenticated implements FilterInterface
+class MediaFIlter implements FilterInterface
 {
     /**
      * Do whatever processing this filter needs to do.
@@ -25,7 +25,7 @@ class RedirectIfAuthenticated implements FilterInterface
      */
     public function before(RequestInterface $request, $arguments = null)
     {
-        if (session('logged_in')) {
+        if (session('logged_in') && session('level') == 'media') {
             return redirect()->to(site_url('dashboard'));
         }
     }

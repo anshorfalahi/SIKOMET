@@ -26,7 +26,8 @@ class Filters extends BaseConfig
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
         'authenticate' => \App\Filters\Authenticate::class, 
-        'redirectIfAuthenticated' => \App\Filters\RedirectIfAuthenticated::class, 
+        'AdminFilter' => \App\Filters\AdminFilter::class,
+        'MediaFilter' => \App\Filters\MediaFilter::class,
     ];
 
     /**
@@ -69,5 +70,29 @@ class Filters extends BaseConfig
      * Example:
      * 'isLoggedIn' => ['before' => ['account/*', 'profiles/*']]
      */
-    public array $filters = [];
+    public array $filters = [
+        'authenticate' => ['before' => 
+            [
+                'dashboard', 
+                'profile_media', 
+                'list_profile_media', 
+                'upload_berkas'
+            ]
+        ],
+        'MediaFilter' => ['before' => 
+            [
+                'auth/login', 
+                'auth/register',
+                'list_profile_media/*',
+            ]
+        ],
+        'AdminFilter' => ['before' => 
+            [
+                'auth/login', 
+                'auth/register',
+                'profile_media',
+                'upload_berkas',
+            ]
+        ],
+    ];
 }
