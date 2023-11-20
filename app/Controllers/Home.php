@@ -7,7 +7,8 @@ class Home extends BaseController
 {
     public function index(){
         $model = new MProfileMedia();
-        $media = $model->select('nama_media, link_media, logo_media')->get()->getResultArray();
+        //select nama_media, link_media, logo_media from tb_profile_media where status = 1
+        $media = $model->where(['status' => '1'])->findAll();
 
         return view('home', ['media' => $media]);
     }

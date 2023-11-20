@@ -73,8 +73,6 @@ class ProfileMedia extends BaseController
 
         
         //move logo new
-
-        // $data = $this->request->getPost();
         $data = [
             'nama_media' => $this->request->getPost('nama_media'),
             'nama_instansi' => $this->request->getPost('nama_instansi'),

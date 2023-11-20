@@ -21,5 +21,9 @@ $routes->get('/profile_media', 'ProfileMedia::index', ['filter' => 'authenticate
 $routes->post('/profile_media/update', 'ProfileMedia::update', ['filter' => 'authenticate']);
 
 $routes->get('/list_profile_media', 'ListProfileMedia::index', ['filter' => 'authenticate']);
+$routes->get('/list_profile_media/detail/(:num)', 'ListProfileMedia::detail/$1', ['filter' => 'authenticate']);
+$routes->post('/list_profile_media/active/(:num)', 'ListProfileMedia::active/$1', ['filter' => 'authenticate']);
+$routes->delete('/list_profile_media/delete/(:num)', 'ListProfileMedia::deleteAkun/$1', ['filter' => 'authenticate']);  
+
 
 $routes->get('/upload_berkas', 'UploadBerkas::index', ['filter' => 'authenticate']);

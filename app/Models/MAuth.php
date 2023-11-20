@@ -31,4 +31,9 @@ class MAuth extends Model
         $query = $this->select('id_akun')->where('username', $username)->get();
         return $query->getRowArray();
     }
+
+    public function deleteAkun($id_akun)
+    {
+        $this->delete($id_akun);
+    }
 }

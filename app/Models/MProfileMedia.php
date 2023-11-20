@@ -14,4 +14,20 @@ class MProfileMedia extends Model
     {
         $this->insert($data);
     }
+
+    public function getAllProfileMedia()
+    {
+        return $this->findAll();
+    }
+
+    public function getProfileMediaById($id)
+    {
+        return $this->where(['id_media' => $id])->first();
+    }
+
+    public function deleteProfileMedia($id_media)
+    {
+        $this->delete($id_media);
+    }
+    
 }
