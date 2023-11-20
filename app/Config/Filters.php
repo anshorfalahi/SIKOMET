@@ -75,7 +75,7 @@ class Filters extends BaseConfig
             [
                 'dashboard', 
                 'profile_media', 
-                'list_profile_media', 
+                'list_profile_media/*', 
                 'upload_berkas'
             ]
         ],

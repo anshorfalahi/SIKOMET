@@ -133,7 +133,7 @@
                                         <div class="col-md-9">
                                         <div class="form-group has-icon-left">
                                             <div class="position-relative">
-                                                <img name="logo_old"src="<?= base_url()?>assets/img/logo_media/<?= $profile_media['logo_media'] ?>" alt="" width="100px" height="100px">
+                                                <img name="logo_old"src="<?= base_url()?>uploads/logo_media/<?= $profile_media['logo_media'] ?>" alt="" width="100px" height="100px">
                                             </div>
                                         </div>
                                         </div>

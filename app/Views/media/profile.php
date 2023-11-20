@@ -144,8 +144,8 @@
                                         <div class="col-md-9">
                                         <div class="form-group has-icon-left">
                                             <div class="position-relative">
-                                                <input type="file" name="logo_media" class="image-preview-filepond" value="<?= base_url()?>assets/img/logo_media/<?= $profile_media->logo_media ?>">
-                                                <img name="logo_old"src="<?= base_url()?>assets/img/logo_media/<?= $profile_media->logo_media ?>" alt="" width="100px" height="100px"><- Logo Sebelumnya
+                                                <input type="file" name="logo_media" class="image-preview-filepond" value="<?= base_url()?>uploads/logo_media/<?= $profile_media->logo_media ?>">
+                                                <img name="logo_old"src="<?= base_url()?>uploads/logo_media/<?= $profile_media->logo_media ?>" alt="" width="100px" height="100px"><- Logo Sebelumnya
                                                 <p>JPG,PNG,JPEG,Maksimal 1024x1024 pixel dengan rasio 1:1</p>
                                             </div>
                                         </div>

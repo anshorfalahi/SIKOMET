@@ -15,6 +15,8 @@ FilePond.create(document.querySelector(".basic-filepond"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -23,6 +25,8 @@ FilePond.create(document.querySelector(".basic-filepond1"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -31,6 +35,8 @@ FilePond.create(document.querySelector(".basic-filepond2"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -39,6 +45,8 @@ FilePond.create(document.querySelector(".basic-filepond3"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -47,6 +55,8 @@ FilePond.create(document.querySelector(".basic-filepond4"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -55,6 +65,8 @@ FilePond.create(document.querySelector(".basic-filepond5"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -63,6 +75,8 @@ FilePond.create(document.querySelector(".basic-filepond6"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -71,6 +85,8 @@ FilePond.create(document.querySelector(".basic-filepond7"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -79,6 +95,8 @@ FilePond.create(document.querySelector(".basic-filepond8"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -87,6 +105,8 @@ FilePond.create(document.querySelector(".basic-filepond9"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -95,6 +115,8 @@ FilePond.create(document.querySelector(".basic-filepond10"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -103,6 +125,8 @@ FilePond.create(document.querySelector(".basic-filepond11"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -111,6 +135,8 @@ FilePond.create(document.querySelector(".basic-filepond11"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -119,6 +145,8 @@ FilePond.create(document.querySelector(".basic-filepond12"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -127,6 +155,8 @@ FilePond.create(document.querySelector(".basic-filepond13"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -135,6 +165,8 @@ FilePond.create(document.querySelector(".basic-filepond14"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -143,6 +175,8 @@ FilePond.create(document.querySelector(".basic-filepond15"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -151,6 +185,8 @@ FilePond.create(document.querySelector(".basic-filepond16"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -159,6 +195,8 @@ FilePond.create(document.querySelector(".basic-filepond17"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -167,6 +205,8 @@ FilePond.create(document.querySelector(".basic-filepond18"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })
@@ -175,6 +215,8 @@ FilePond.create(document.querySelector(".basic-filepond19"), {
   allowImagePreview: false,
   allowMultiple: false,
   allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
   required: false,
   storeAsFile: true,
 })

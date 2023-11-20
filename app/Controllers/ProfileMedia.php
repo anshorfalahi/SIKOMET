@@ -59,7 +59,7 @@ class ProfileMedia extends BaseController
         if(!$validation_logo){
             return redirect()->to(site_url('profile_media'))->with('error', 'Logo tidak boleh lebih dari 1024x1024 pixel');
         }else{
-            $logo_media->move('assets/img/logo_media');
+            $logo_media->move('uploads/logo_media');
         }
 
 
@@ -68,7 +68,7 @@ class ProfileMedia extends BaseController
         $query->where('id_akun', $id_akun);
         $logo_old = $query->get()->getRow()->logo_media;
         if($logo_old != 'blank.png'){
-            unlink('assets/img/logo_media/'.$logo_old);
+            unlink('uploads/logo_media/'.$logo_old);
         }
 
         

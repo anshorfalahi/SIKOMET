@@ -240,7 +240,7 @@
                 foreach($media as $m):?>
                 <div class="col-lg-3 wow fadeIn" data-wow-delay="<?php echo $delay+= 0.1; ?>s">
                     <div class="case-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="<?=base_url()?>assets/img/logo_media/<?=$m['logo_media']?>">
+                        <img class="img-fluid" src="<?=base_url()?>uploads/logo_media/<?=$m['logo_media']?>">
                         <a class="case-overlay text-decoration-none" href="<?php echo $m['link_media']?>">
                             <h5 class="lh-base text-white mb-3"><?php echo $m['nama_media']?></h5>
                             <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
