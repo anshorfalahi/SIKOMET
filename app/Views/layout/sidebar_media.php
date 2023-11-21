@@ -7,7 +7,7 @@
                     <span>Dashboard</span>
                 </a>
             </li>
-            <li class="sidebar-item <?= ($active == 'profile') ? 'active' : '' ?>">
+            <li class="sidebar-item <?= ($active == 'profile_media') ? 'active' : '' ?>">
                 <a href="profile_media" class='sidebar-link'>
                     <i class="bi bi-person"></i>
                     <span>Profile</span>

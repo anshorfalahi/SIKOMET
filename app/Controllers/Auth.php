@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\MAuth;
 use App\Models\MProfileMedia;
+use App\Models\MUploadBerkas;
 
 class Auth extends BaseController
 {
@@ -70,6 +71,13 @@ class Auth extends BaseController
             'logo_media' => 'blank.png'
         ];
         $model2->insertProfileMedia($data2);
+
+        $modelBerkas = new MUploadBerkas();
+        $id_media = $this->db->table('tb_profile_media')->where('id_akun', $id_akun['id_akun'])->get()->getRow()->id_media;
+        $dataBerkas = [
+            'id_media' => $id_media,
+        ];
+        $modelBerkas->insert($dataBerkas);
 
         return redirect()->to('auth/login')->with('success', 'Register success, please login');
     

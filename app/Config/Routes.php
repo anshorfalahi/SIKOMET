@@ -27,3 +27,4 @@ $routes->delete('/list_profile_media/delete/(:num)', 'ListProfileMedia::deleteAk
 
 
 $routes->get('/upload_berkas', 'UploadBerkas::index');
+$routes->post('/upload_berkas/prosesUpdateBerkas', 'UploadBerkas::prosesUpdateBerkas');
