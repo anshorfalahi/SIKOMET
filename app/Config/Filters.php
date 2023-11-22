@@ -74,16 +74,22 @@ class Filters extends BaseConfig
         'authenticate' => ['before' => 
             [
                 'dashboard', 
-                'profile_media', 
+                'profile_media',
+                'list_profile_media', 
                 'list_profile_media/*', 
-                'upload_berkas'
+                'upload_berkas',
+                'validasi_berkas',
+                'validasi_berkas/*',
             ]
         ],
         'MediaFilter' => ['before' => 
             [
                 'auth/login', 
                 'auth/register',
+                'list_profile_media',
                 'list_profile_media/*',
+                'validasi_berkas',
+                'validasi_berkas/*',    
             ]
         ],
         'AdminFilter' => ['before' => 

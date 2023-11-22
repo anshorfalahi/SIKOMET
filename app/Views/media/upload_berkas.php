@@ -301,8 +301,23 @@
                       <a href="<?= base_url('uploads/berkas/' . $berkas->surat_izin_siaran) ?>" download class="btn btn-success"><i class="bi bi-download"></i></a>
                     <?php endif ?>
                 </div>
+                <div class="col-md-4">
+                    <label><b>Catatan Admin</b></label>
+                </div>
+                <div class="col-md-7">
+                    <div class="form-group">
+                        <textarea class="form-control" id="" cols="4" rows="2" disabled><?=$berkas->catatan?></textarea>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <?php if ($berkas->validasi == 0) : ?>
+                      <label style="background-color: red; color: white; padding: 5px; border-radius: 5px; text-align: center;"><b>Belum Valid</b></label>
+                    <?php else : ?>
+                      <label style="background-color: green; color: white; border-radius: 5px; text-align: center;  padding: 5px;"><b>Sudah Valid</b></label>
+                    <?php endif ?>
+                </div>
                 <div class="col-12 d-flex justify-content-end">
-                  <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+                  <button type="submit" class="btn btn-primary btn-lg me-1 mb-1">Submit</button>
                 </div>
               </div>
             </div>

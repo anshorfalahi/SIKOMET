@@ -23,8 +23,12 @@ $routes->post('/profile_media/update', 'ProfileMedia::update');
 $routes->get('/list_profile_media', 'ListProfileMedia::index');
 $routes->get('/list_profile_media/detail/(:num)', 'ListProfileMedia::detail/$1');
 $routes->post('/list_profile_media/active/(:num)', 'ListProfileMedia::active/$1');
-$routes->delete('/list_profile_media/delete/(:num)', 'ListProfileMedia::deleteAkun/$1');  
-
+$routes->post('/list_profile_media/delete/(:num)', 'ListProfileMedia::deleteAkun/$1'); 
 
 $routes->get('/upload_berkas', 'UploadBerkas::index');
 $routes->post('/upload_berkas/prosesUpdateBerkas', 'UploadBerkas::prosesUpdateBerkas');
+
+$routes->get('/validasi_berkas', 'ValidasiBerkas::index');
+$routes->post('/validasi_berkas/validasi/(:num)', 'ValidasiBerkas::validasi/$1');
+$routes->get('/validasi_berkas/detail/(:num)', 'ValidasiBerkas::detailBerkas/$1');
+$routes->post('/validasi_berkas/prosesValidasi/(:num)', 'ValidasiBerkas::prosesValidasi/$1');

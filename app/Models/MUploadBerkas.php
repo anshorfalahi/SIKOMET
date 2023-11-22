@@ -24,12 +24,14 @@ class MUploadBerkas extends Model
         'pas_photo',
         'foto_kantor',
         'struktur_redaksi',
-        'surat_izin_siaran'
+        'surat_izin_siaran',
+        'validasi',
+        'catatan',
     ];
 
     public function getBerkas($id)
     {
-        return $this->where(['id_media' => $id])->get()->getRow();
+        return $this->where(['id_media' => $id])->get()->getRowArray();
     }
 
 }

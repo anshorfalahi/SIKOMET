@@ -86,7 +86,7 @@ class UploadBerkas extends BaseController
         $file = $this->request->getFile($fileKey);
 
         if($file->isValid()){
-            $previousFile = $berkasModel->getBerkas($id_media)->$fileKey;
+            $previousFile = $berkasModel->getBerkas($id_media)[$fileKey];
 
             $randomName = $file->getRandomName();
 
