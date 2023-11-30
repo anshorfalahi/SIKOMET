@@ -29,8 +29,10 @@ class ProfileMedia extends BaseController
                 'nama_instansi' => $this->request->getPost('nama_instansi'),
                 'link_media' => $this->request->getPost('link_media'),
                 'jenis_media' => $this->request->getPost('jenis_media'),
+                'pimpinan_tertinggi' => $this->request->getPost('pimpinan_tertinggi'),
+                'jabatan_pt' => $this->request->getPost('jabatan_pt'),
                 'penanggung_jawab' => $this->request->getPost('penanggung_jawab'),
-                'jabatan' => $this->request->getPost('jabatan'),
+                'jabatan_pj' => $this->request->getPost('jabatan_pj'),
                 'no_hp' => $this->request->getPost('no_hp'),
                 'alamat' => $this->request->getPost('alamat')
             ];
@@ -78,8 +80,10 @@ class ProfileMedia extends BaseController
             'nama_instansi' => $this->request->getPost('nama_instansi'),
             'link_media' => $this->request->getPost('link_media'),
             'jenis_media' => $this->request->getPost('jenis_media'),
+            'pimpinan_tertinggi' => $this->request->getPost('pimpinan_tertinggi'),
+            'jabatan_pt' => $this->request->getPost('jabatan_pt'),
             'penanggung_jawab' => $this->request->getPost('penanggung_jawab'),
-            'jabatan' => $this->request->getPost('jabatan'),
+            'jabatan_pj' => $this->request->getPost('jabatan_pj'),
             'no_hp' => $this->request->getPost('no_hp'),
             'alamat' => $this->request->getPost('alamat'),
             'logo_media' => $logo_media->getName()

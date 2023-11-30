@@ -80,6 +80,7 @@ class Filters extends BaseConfig
                 'upload_berkas',
                 'validasi_berkas',
                 'validasi_berkas/*',
+                'pengajuan_kerja_sama',
             ]
         ],
         'MediaFilter' => ['before' => 

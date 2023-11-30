@@ -18,10 +18,10 @@
             <span>Upload Berkas</span>
         </a>
     </li>
-    <li class="sidebar-item <?= ($active == 'perjanjian_kerja_sama') ? 'active' : '' ?>">
-        <a href="<?= base_url('perjanjian_kerja_sama') ?>" class='sidebar-link'>
+    <li class="sidebar-item <?= ($active == 'pengajuan_kerja_sama') ? 'active' : '' ?>">
+        <a href="<?= base_url('pengajuan_kerja_sama') ?>" class='sidebar-link'>
             <i class="bi bi-clipboard-check"></i>
-            <span>Perjanjian Kerja Sama</span>
+            <span>Pengajuan Kerjasama</span>
         </a>
     </li>
     <li class="sidebar-item  <?= ($active == 'daftar_berita') ? 'active' : '' ?>">

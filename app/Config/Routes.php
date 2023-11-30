@@ -29,6 +29,12 @@ $routes->get('/upload_berkas', 'UploadBerkas::index');
 $routes->post('/upload_berkas/prosesUpdateBerkas', 'UploadBerkas::prosesUpdateBerkas');
 
 $routes->get('/validasi_berkas', 'ValidasiBerkas::index');
-$routes->post('/validasi_berkas/validasi/(:num)', 'ValidasiBerkas::validasi/$1');
 $routes->get('/validasi_berkas/detail/(:num)', 'ValidasiBerkas::detailBerkas/$1');
 $routes->post('/validasi_berkas/prosesValidasi/(:num)', 'ValidasiBerkas::prosesValidasi/$1');
+
+$routes->get('/pengajuan_kerja_sama', 'PengajuanKerjaSama::index');
+$routes->get('/pengajuan_kerja_sama/tambah_pengajuan_kerjasama', 'PengajuanKerjaSama::tambah_pengajuan_kerjasama');
+$routes->post('/pengajuan_kerja_sama/insertPengajuanKerjaSama', 'PengajuanKerjaSama::insertPengajuanKerjaSama');
+$routes->get('/pengajuan_kerja_sama/ubah_pengajuan_kerjasama/(:num)', 'PengajuanKerjaSama::ubah_pengajuan_kerjasama/$1');
+$routes->post('/pengajuan_kerja_sama/updatePengajuanKerjaSama/(:num)', 'PengajuanKerjaSama::updatePengajuanKerjaSama/$1');
+$routes->post('/pengajuan_kerja_sama/deletePengajuanKerjaSama/(:num)', 'PengajuanKerjaSama::deletePengajuanKerjaSama/$1');

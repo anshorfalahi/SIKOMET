@@ -76,7 +76,33 @@
                                             </div>
                                         </div>
                                         <div class="col-md-3">
-                                            <label for="password-horizontal-icon"><b>Penanggung Jawab</b></label>
+                                            <label for="password-horizontal-icon"><b>Nama Pimpinan Tertinggi</b></label>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="form-group has-icon-left">
+                                                <div class="position-relative">
+                                                    <input type="text" class="form-control" name='pimpinan_tertinggi' value="<?= $profile_media['pimpinan_tertinggi'] ?>" disabled>
+                                                    <div class="form-control-icon">
+                                                        <i class="bi bi-person"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="password-horizontal-icon"><b>Jabatan Pimpinan Tertinggi</b></label>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="form-group has-icon-left">
+                                                <div class="position-relative">
+                                                    <input type="text" class="form-control" name='jabatan_pt' value="<?= $profile_media['jabatan_pt'] ?>" disabled>
+                                                    <div class="form-control-icon">
+                                                        <i class="bi bi-x-diamond"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="password-horizontal-icon"><b>Nama Penanggung Jawab</b></label>
                                         </div>
                                         <div class="col-md-9">
                                             <div class="form-group has-icon-left">
@@ -89,12 +115,12 @@
                                             </div>
                                         </div>
                                         <div class="col-md-3">
-                                            <label for="password-horizontal-icon"><b>Jabatan</b></label>
+                                            <label for="password-horizontal-icon"><b>Jabatan Penanggung Jawab</b></label>
                                         </div>
                                         <div class="col-md-9">
                                             <div class="form-group has-icon-left">
                                                 <div class="position-relative">
-                                                    <input type="text" class="form-control" name='jabatan' value="<?= $profile_media['jabatan'] ?>" disabled>
+                                                    <input type="text" class="form-control" name='jabatan_pj' value="<?= $profile_media['jabatan_pj'] ?>" disabled>
                                                     <div class="form-control-icon">
                                                         <i class="bi bi-x-diamond"></i>
                                                     </div>
@@ -102,7 +128,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-3">
-                                            <label for="password-horizontal-icon"><b>Nomer HP</b></label>
+                                            <label for="password-horizontal-icon"><b>Nomer HP Penangung Jawab</b></label>
                                         </div>
                                         <div class="col-md-9">
                                             <div class="form-group has-icon-left">

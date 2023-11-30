@@ -26,7 +26,7 @@
                     <td>Salinan Akte pendirian dan perubahan terakhir (PT, Yayasan, Koperasi) dari notaris dan salinan pengesahan dari Kemenkumham RI</td>
                     <?php if ($berkas['akte_pendirian'] != null): ?>
                       <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['akte_pendirian'] ?>" target="_blank" class="btn btn-sm btn-primary">Lihat</a></td>
-                      <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['akte_pendirian'] ?>" class="btn btn-sm btn-primary">Download</a></td>
+                      <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['akte_pendirian'] ?>" class="btn btn-sm btn-primary"  download>Download</a></td>
                     <?php else: ?>
                       <td><span class="badge bg-danger">Belum Ada</span></td>
                       <td><span class="badge bg-danger">Belum Ada</span></td>
@@ -37,7 +37,7 @@
                     <td>Surat Izin Usaha Perusahaan (SIUP)</td>
                     <?php if ($berkas['surat_izin_usaha_perusahaan'] != null): ?>
                       <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_izin_usaha_perusahaan'] ?>" target="_blank" class="btn btn-sm btn-primary">Lihat</a></td>
-                      <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_izin_usaha_perusahaan'] ?>" class="btn btn-sm btn-primary">Download</a></td>
+                      <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_izin_usaha_perusahaan'] ?>" class="btn btn-sm btn-primary"
                     <?php else: ?>
                       <td><span class="badge bg-danger">Belum Ada</span></td>
                       <td><span class="badge bg-danger">Belum Ada</span></td>
@@ -48,7 +48,7 @@
                     <td>Surat izin Tempat Usaha (SITU)</td>
                     <?php if ($berkas['surat_izin_tempat_usaha'] != null): ?>
                       <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_izin_tempat_usaha'] ?>" target="_blank" class="btn btn-sm btn-primary">Lihat</a></td>
-                      <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_izin_tempat_usaha'] ?>" class="btn btn-sm btn-primary">Download</a></td>
+                      <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_izin_tempat_usaha'] ?>" class="btn btn-sm btn-primary" download>Download</a></td>
                     <?php else: ?>
                       <td><span class="badge bg-danger">Belum Ada</span></td>
                       <td><span class="badge bg-danger">Belum Ada</span></td>
@@ -59,7 +59,7 @@
                     <td>Surat Keterangan Domisili Perusahaan</td>
                     <?php if ($berkas['surat_keterangan_domisili_perusahaan'] != null): ?>
                       <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_keterangan_domisili_perusahaan'] ?>" target="_blank" class="btn btn-sm btn-primary">Lihat</a></td>
-                      <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_keterangan_domisili_perusahaan'] ?>" class="btn btn-sm btn-primary">Download</a></td>
+                      <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_keterangan_domisili_perusahaan'] ?>" class="btn btn-sm btn-primary" download>Download</a></td>
                     <?php else: ?>
                       <td><span class="badge bg-danger">Belum Ada</span></td>
                       <td><span class="badge bg-danger">Belum Ada</span></td>
@@ -70,7 +70,7 @@
                   <td>Tanda Daftar Perusahaan (TDP)</td>
                   <?php if($berkas['tanda_daftar_perusahaan'] != null): ?>
                     <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['tanda_daftar_perusahaan'] ?>" target="_blank" class="btn btn-sm btn-primary">Lihat</a></td>
-                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['tanda_daftar_perusahaan'] ?>" class="btn btn-sm btn-primary">Download</a></td>
+                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['tanda_daftar_perusahaan'] ?>" class="btn btn-sm btn-primary" download>Download</a></td>
                   <?php else: ?>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
@@ -81,7 +81,7 @@
                   <td>Nomor Rekening Perusahaan</td>
                   <?php if($berkas['no_rek'] != null): ?>
                     <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['no_rek'] ?>" target="_blank" class="btn btn-sm btn-primary">Lihat</a></td>
-                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['no_rek'] ?>" class="btn btn-sm btn-primary">Download</a></td>
+                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['no_rek'] ?>" class="btn btn-sm btn-primary" download>Download</a></td>
                   <?php else: ?>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
@@ -92,7 +92,7 @@
                   <td>Nomor Pokok Wajib Pajak (NPWP)</td>
                   <?php if($berkas['npwp'] != null): ?>
                     <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['npwp'] ?>" target="_blank" class="btn btn-sm btn-primary">Lihat</a></td>
-                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['npwp'] ?>" class="btn btn-sm btn-primary">Download</a></td>
+                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['npwp'] ?>" class="btn btn-sm btn-primary" download>Download</a></td>
                   <?php else: ?>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
@@ -103,7 +103,7 @@
                   <td>SPT Tahunan, SSP 3 Bulan terakhir dan Surat Keterangan Fiksal</td>
                   <?php if($berkas['spt_tahunan'] != null): ?>
                     <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['spt_tahunan'] ?>" target="_blank" class="btn btn-sm btn-primary">Lihat</a></td>
-                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['spt_tahunan'] ?>" class="btn btn-sm btn-primary">Download</a></td>
+                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['spt_tahunan'] ?>" class="btn btn-sm btn-primary" download>Download</a></td>
                   <?php else: ?>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
@@ -114,7 +114,7 @@
                   <td>Surat Penawaran Kerjasama disertai dengan tarif yang ditandatangani oleh Pimpinan atau Perusahaan/Media</td>
                   <?php if($berkas['surat_penawaran_kerjasama'] != null): ?>
                     <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_penawaran_kerjasama'] ?>" target="_blank" class="btn btn-sm btn-primary">Lihat</a></td>
-                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_penawaran_kerjasama'] ?>" class="btn btn-sm btn-primary">Download</a></td>
+                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_penawaran_kerjasama'] ?>" class="btn btn-sm btn-primary" download>Download</a></td>
                   <?php else: ?>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
@@ -125,7 +125,7 @@
                   <td>Perusahaan Pers menerbitkan Surat Tugas Ka.Biro/Wartawan di wilayah Kabupaten Banjar</td>
                   <?php if($berkas['surat_tugas'] != null): ?>
                     <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_tugas'] ?>" target="_blank" class="btn btn-sm btn-primary">Lihat</a></td>
-                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_tugas'] ?>" class="btn btn-sm btn-primary">Download</a></td>
+                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_tugas'] ?>" class="btn btn-sm btn-primary" download>Download</a></td>
                   <?php else: ?>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
@@ -136,7 +136,7 @@
                   <td>Salinan KTP Pimpinan perusahaan dan wartawan yang bertugas di Kabupaten Banjar</td>
                   <?php if ($berkas['ktp_pimpinan'] != null): ?>
                     <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['ktp_pimpinan'] ?>" target="_blank" class="btn btn-sm btn-primary">Lihat</a></td>
-                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['ktp_pimpinan'] ?>" class="btn btn-sm btn-primary">Download</a></td>
+                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['ktp_pimpinan'] ?>" class="btn btn-sm btn-primary" download>Download</a></td>
                   <?php else: ?>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
@@ -147,7 +147,7 @@
                   <td>Pas Photo warna Ka.Biro/Wartawan ukuran 3 x 4 (2 lembar)</td>
                   <?php if ($berkas['pas_photo'] != null): ?>
                     <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['pas_photo'] ?>" target="_blank" class="btn btn-sm btn-primary">Lihat</a></td>
-                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['pas_photo'] ?>" class="btn btn-sm btn-primary">Download</a></td>
+                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['pas_photo'] ?>" class="btn btn-sm btn-primary" download>Download</a></td>
                   <?php else: ?>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
@@ -158,7 +158,7 @@
                   <td>Foto Kantor/Perusahaan (pusat)</td>
                   <?php if($berkas['foto_kantor'] != null): ?>
                     <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['foto_kantor'] ?>" target="_blank" class="btn btn-sm btn-primary">Lihat</a></td>
-                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['foto_kantor'] ?>" class="btn btn-sm btn-primary">Download</a></td>
+                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['foto_kantor'] ?>" class="btn btn-sm btn-primary" download>Download</a></td>
                   <?php else: ?>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
@@ -169,7 +169,7 @@
                   <td>Salinan Struktur Redaksi</td>
                   <?php if($berkas['struktur_redaksi'] != null): ?>
                     <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['struktur_redaksi'] ?>" target="_blank" class="btn btn-sm btn-primary">Lihat</a></td>
-                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['struktur_redaksi'] ?>" class="btn btn-sm btn-primary">Download</a></td>
+                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['struktur_redaksi'] ?>" class="btn btn-sm btn-primary" download>Download</a></td>
                   <?php else: ?>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
@@ -180,7 +180,7 @@
                   <td>Surat Izin Siaran (Radio & Telivisi)</td>
                   <?php if($berkas['surat_izin_siaran'] != null): ?>
                     <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_izin_siaran'] ?>" target="_blank" class="btn btn-sm btn-primary">Lihat</a></td>
-                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_izin_siaran'] ?>" class="btn btn-sm btn-primary">Download</a></td>
+                    <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_izin_siaran'] ?>" class="btn btn-sm btn-primary" download>Download</a></td>
                   <?php else: ?>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
                     <td><span class="badge bg-danger">Belum Ada</span></td>
