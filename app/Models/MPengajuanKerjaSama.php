@@ -25,4 +25,24 @@ class MPengajuanKerjaSama extends Model
         return $builder->get();
     }
 
+    public function getPengajuanKerjaSamaJoin()
+    {
+        $builder = $this->db->table('tb_pks');
+        $builder->select('*');
+        $builder->join('tb_profile_media', 'tb_profile_media.id_media = tb_pks.id_media');
+        $builder->orderBy('tb_pks.id_pks', 'DESC');
+        return $builder->get();
+    }
+
+    public function printPengajuanKerjaSamaJoin($id_media)
+    {
+        $builder = $this->db->table('tb_pks');
+        $builder = $this->db->table('tb_dkisp');
+        $builder->select('*');
+        $builder->join('tb_profile_media', 'tb_profile_media.id_media = tb_pks.id_media');
+        $builder->where('tb_pks.id_media', $id_media);
+        $builder->orderBy('tb_pks.id_pks', 'DESC');
+        return $builder->get();
+    }
+
 }

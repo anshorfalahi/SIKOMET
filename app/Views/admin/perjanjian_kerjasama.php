@@ -9,6 +9,7 @@
 </div> 
 <section class="row"> 
 <div class="card-header">
+
   <div class="card">
   <?php if(session()->getFlashdata('success')): ?>
     <div class="alert alert-success" role="alert" >
@@ -22,13 +23,14 @@
     </div>
   <?php endif; ?>
     <div class="card-body">
-      <?php if($pengajuan_kerja_sama == null): ?>
-        <a href="<?= base_url() ?>pengajuan_kerja_sama/tambah_pengajuan_kerjasama" class="btn btn-primary btn-sm"><i class="bi bi-plus-circle"></i> Tambah Pengajuan Kerja Sama</a>
-      <?php endif; ?>
-
+    <a href="<?= base_url() ?>perjanjian_kerja_sama/editKadis" class="btn btn-primary btn-sm" >Edit Kadis</a>
+      <div class="table-responsive">
       <table class="table table-striped" id="table1">
         <thead>
           <tr>
+            <th>No</th>
+            <th>Nama Media</th>
+            <th>Nama Instansi</th>
             <th>Masa Perjanjian</th>
             <th>Masa Jangka Waktu</th>
             <th>Tarif Pemasangan</th>
@@ -39,17 +41,20 @@
           </tr>
         </thead>
         <tbody>
-          <?php foreach($pengajuan_kerja_sama as $pks): ?>
+          <?php $no = 1; ?>
+          <?php foreach($pks as $row): ?>
           <tr>
-            <td><?= $pks['masa_pks'] ?></td>
-            <td><?= $pks['masa_jangka_pks'] ?></td>
-            <td><?= $pks['tarif_pks'] ?></td>
-            <td><?= $pks['minimal_berita'] ?></td>
-            <td><?= $pks['jenis_berita'] ?></td>
-            <td><?= $pks['status_ajuan'] ?></td>
+            <td><?= $no++ ?></td>
+            <td><?= $row['nama_media'] ?></td>
+            <td><?= $row['nama_instansi'] ?></td>
+            <td><?= $row['masa_pks'] ?></td>
+            <td><?= $row['masa_jangka_pks'] ?></td>
+            <td><?= $row['tarif_pks'] ?></td>
+            <td><?= $row['minimal_berita'] ?></td>
+            <td><?= $row['jenis_berita'] ?></td>
+            <td><?= $row['status_ajuan'] ?></td>
             <td>
-              <a href="<?= base_url() ?>pengajuan_kerja_sama/ubah_pengajuan_kerjasama/<?= $pks['id_pks'] ?>" class="btn btn-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
-              <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#delete<?= $pks['id_pks'] ?>"><i class="bi bi-trash"></i></button>
+              <a href="<?= base_url() ?>perjanjian_kerja_sama/printPerjanjianKerjaSama/<?= $row['id_media'] ?>" class="btn btn-primary btn-sm" target="_blank">Print</a>
             </td>
           </tr>
           <?php endforeach; ?>
@@ -59,28 +64,6 @@
   </div>
 </div>
 </section>
-
-<!-- Modal -->
-<?php foreach($pengajuan_kerja_sama as $pks): ?>
-  <div class="modal fade" id="delete<?= $pks['id_pks'] ?>" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <form method="post" action="<?= base_url()?>pengajuan_kerja_sama/deletePengajuanKerjaSama/<?= $pks['id_pks'] ?>">
-          <div class="modal-header">
-            <h5 class="modal-title" id="delete<?= $pks['id_pks'] ?>Label">Hapus Pengajuan Kerja Sama</h5>
-          </div>
-          <div class="modal-body">
-            Apakah Anda yakin ingin menghapus pengajuan kerja sama ini?
-          </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div
-<?php endforeach; ?>
-
 
 
 <script src="<?= base_url() ?>assets/extensions/simple-datatables/umd/simple-datatables.js"></script>

@@ -29,5 +29,10 @@ class MProfileMedia extends Model
     {
         $this->delete($id_media);
     }
+
+    public function getAllProfileMediaAktif()
+    {
+        return $this->where(['status' => '1'])->findAll();
+    }
     
 }

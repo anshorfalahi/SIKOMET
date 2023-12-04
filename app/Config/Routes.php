@@ -38,3 +38,8 @@ $routes->post('/pengajuan_kerja_sama/insertPengajuanKerjaSama', 'PengajuanKerjaS
 $routes->get('/pengajuan_kerja_sama/ubah_pengajuan_kerjasama/(:num)', 'PengajuanKerjaSama::ubah_pengajuan_kerjasama/$1');
 $routes->post('/pengajuan_kerja_sama/updatePengajuanKerjaSama/(:num)', 'PengajuanKerjaSama::updatePengajuanKerjaSama/$1');
 $routes->post('/pengajuan_kerja_sama/deletePengajuanKerjaSama/(:num)', 'PengajuanKerjaSama::deletePengajuanKerjaSama/$1');
+
+$routes->get('/perjanjian_kerja_sama', 'PerjanjianKerjaSama::index');
+$routes->get('/perjanjian_kerja_sama/printPerjanjianKerjaSama/(:num)', 'PerjanjianKerjaSama::printPerjanjianKerjaSama/$1');
+$routes->get('/perjanjian_kerja_sama/editKadis', 'PerjanjianKerjaSama::editKadis');
+$routes->post('/perjanjian_kerja_sama/processEditKadis', 'PerjanjianKerjaSama::processEditKadis');
