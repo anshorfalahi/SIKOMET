@@ -42,9 +42,18 @@
                     <div class="form-group position-relative has-icon-left mb-4">
                       <select class="form-control" id="masa_kerja_sama" name="masa_kerja_sama" onchange="hitungDateRange()">
                           <option value="">Pilih Masa Kerja Sama</option>
+                          <option value="1 bulan">1 Bulan</option>
+                          <option value="2 bulan">2 Bulan</option>
                           <option value="3 bulan">3 Bulan</option>
+                          <option value="4 bulan">4 Bulan</option>
+                          <option value="5 bulan">5 Bulan</option>
                           <option value="6 bulan">6 Bulan</option>
+                          <option value="7 bulan">7 Bulan</option>
+                          <option value="8 bulan">8 Bulan</option>
                           <option value="9 bulan">9 Bulan</option>
+                          <option value="10 bulan">10 Bulan</option>
+                          <option value="11 bulan">11 Bulan</option>
+                          <option value="12 bulan">12 Bulan</option>
                       </select>
                       <div class="form-control-icon">
                           <i class="bi bi-calendar3"></i>

@@ -43,3 +43,10 @@ $routes->get('/perjanjian_kerja_sama', 'PerjanjianKerjaSama::index');
 $routes->get('/perjanjian_kerja_sama/printPerjanjianKerjaSama/(:num)', 'PerjanjianKerjaSama::printPerjanjianKerjaSama/$1');
 $routes->get('/perjanjian_kerja_sama/editKadis', 'PerjanjianKerjaSama::editKadis');
 $routes->post('/perjanjian_kerja_sama/processEditKadis', 'PerjanjianKerjaSama::processEditKadis');
+
+$routes->get('/daftar_berita', 'DaftarBerita::index');
+$routes->get('/daftar_berita/tambah_berita', 'DaftarBerita::tambah_berita');
+$routes->post('/daftar_berita/insertBerita', 'DaftarBerita::insertBerita');
+$routes->get('/daftar_berita/ubah_berita/(:num)', 'DaftarBerita::ubah_berita/$1');
+$routes->post('/daftar_berita/updateBerita/(:num)', 'DaftarBerita::updateBerita/$1');
+$routes->post('/daftar_berita/deleteBerita/(:num)', 'DaftarBerita::deleteBerita/$1');

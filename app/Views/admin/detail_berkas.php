@@ -37,7 +37,7 @@
                     <td>Surat Izin Usaha Perusahaan (SIUP)</td>
                     <?php if ($berkas['surat_izin_usaha_perusahaan'] != null): ?>
                       <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_izin_usaha_perusahaan'] ?>" target="_blank" class="btn btn-sm btn-primary">Lihat</a></td>
-                      <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_izin_usaha_perusahaan'] ?>" class="btn btn-sm btn-primary"
+                      <td><a href="<?= base_url() ?>uploads/berkas/<?= $berkas['surat_izin_usaha_perusahaan'] ?>" class="btn btn-sm btn-primary" download>Download</a></td>
                     <?php else: ?>
                       <td><span class="badge bg-danger">Belum Ada</span></td>
                       <td><span class="badge bg-danger">Belum Ada</span></td>

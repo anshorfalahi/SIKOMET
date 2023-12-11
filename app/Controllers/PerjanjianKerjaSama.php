@@ -52,7 +52,7 @@ class PerjanjianKerjaSama extends BaseController
         ];
 
         // print("<pre>" . print_r($data['dkisp'], true) . "</pre>");
-        return view('admin/edit_kadis', $data);
+        return view('admin/ubah_kadis', $data);
     }
 
     public function processEditKadis()
