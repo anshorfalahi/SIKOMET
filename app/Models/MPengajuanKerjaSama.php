@@ -45,4 +45,12 @@ class MPengajuanKerjaSama extends Model
         return $builder->get();
     }
 
+    //get all nama_media dan minimal_berita dari tb_pks join tb_profile_media ambil angkanya saja pada minimal_berita
+    public function getNamaMediaMinimalBerita()
+    {
+        $builder = $this->db->table('tb_pks');
+        $builder->select('nama_media, minimal_berita');
+        $builder->join('tb_profile_media', 'tb_profile_media.id_media = tb_pks.id_media');
+        return $builder->get()->getResultArray();
+    }
 }
