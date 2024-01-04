@@ -50,3 +50,8 @@ $routes->post('/daftar_berita/insertBerita', 'DaftarBerita::insertBerita');
 $routes->get('/daftar_berita/ubah_berita/(:num)', 'DaftarBerita::ubah_berita/$1');
 $routes->post('/daftar_berita/updateBerita/(:num)', 'DaftarBerita::updateBerita/$1');
 $routes->post('/daftar_berita/deleteBerita/(:num)', 'DaftarBerita::deleteBerita/$1');
+
+$routes->get('/daftar_berita_admin', 'DaftarBeritaAdmin::index');
+$routes->get('/daftar_berita_admin/(:num)', 'DaftarBeritaAdmin::list_berita/$1');
+$routes->get('/daftar_berita_admin/all', 'DaftarBeritaAdmin::list_berita_all');
+

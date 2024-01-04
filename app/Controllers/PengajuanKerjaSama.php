@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\MPengajuanKerjaSama;
+use App\Models\MUploadBerkas;
+use App\Models\MProfileMedia;
 
 class PengajuanKerjaSama extends BaseController
 {
@@ -20,7 +22,26 @@ class PengajuanKerjaSama extends BaseController
             'pengajuan_kerja_sama' => $data['pengajuan_kerja_sama'],
         ];
         // print("<pre>".print_r($data['pengajuan_kerja_sama'],true)."</pre>");
-        return view('media/pengajuan_kerjasama', $data);
+
+        //buat query cek apakah sudah mengisi lengkap profile media
+        $builder = $this->db->table('tb_profile_media');
+        $query = $builder->where('id_akun', session()->get('id_akun'))->get();
+        $data['profile_media'] = $query->getRow();
+
+        //buat query cek apakah sudah mengisi lengkap berkas
+        $builder = $this->db->table('tb_berkas');
+        $query = $builder->where('id_media', $id_media)->get();
+        $data['berkas'] = $query->getRow();
+
+        //cek apakah sudah mengisi semua data  profile media jika belum maka redirect ke halaman profile media
+        if($data['profile_media']->nama_instansi == null || $data['profile_media']->link_media == null || $data['profile_media']->jenis_media == null || $data['profile_media']->pimpinan_tertinggi == null || $data['profile_media']->jabatan_pt == null || $data['profile_media']->penanggung_jawab == null || $data['profile_media']->jabatan_pj == null || $data['profile_media']->no_hp == null || $data['profile_media']->alamat == null || $data['profile_media']->logo_media == null ){
+            return redirect()->to(site_url('profile_media'))->with('error', 'Silahkan Lengkapi Profile Media Terlebih Dahulu');
+         } // }else if ($data['berkas']->akte_pendirian == null || $data['berkas']->surat_izin_usaha_perusahaan == null || $data['berkas']->surat_izin_tempat_usaha == null || $data['berkas']->surat_keterangan_domisili_perusahaan == null || $data['berkas']->tanda_daftar_perusahaan == null || $data['berkas']->no_rek == null || $data['berkas']->npwp == null || $data['berkas']->spt_tahunan == null || $data['berkas']->surat_penawaran_kerjasama == null || $data['berkas']->surat_tugas == null || $data['berkas']->ktp_pimpinan == null || $data['berkas']->pas_photo == null || $data['berkas']->foto_kantor == null || $data['berkas']->struktur_redaksi == null || $data['berkas']->surat_izin_siaran == null){
+        //     return redirect()->to(site_url('upload_berkas'))->with('error', 'Silahkan Lengkapi Berkas Terlebih Dahulu');
+        // }
+        else {
+            return view('media/pengajuan_kerjasama', $data);
+        }
     }
 
     public function tambah_pengajuan_kerjasama(){

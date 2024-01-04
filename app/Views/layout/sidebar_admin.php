@@ -26,7 +26,7 @@
         </a>
     </li>
     <li class="sidebar-item <?= ($active == 'daftar_berita') ? 'active' : '' ?>">
-        <a href="<?= base_url('daftar_berita') ?>" class='sidebar-link'>
+        <a href="<?= base_url('daftar_berita_admin') ?>" class='sidebar-link'>
             <i class="bi bi-newspaper"></i>
             <span>Daftar Berita</span>
         </a>

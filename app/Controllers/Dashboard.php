@@ -17,6 +17,8 @@ class Dashboard extends BaseController
         $targetBeritaMedia = (new MPengajuanKerjaSama())->getNamaMediaMinimalBerita();
         $totalBeritaMediaPerTahun = (new MDaftarBerita())->getBeritaByYear();
 
+        
+
 
         $dataAdmin = [
             'title' => 'Dashboard',

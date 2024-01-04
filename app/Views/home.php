@@ -23,7 +23,7 @@
 
     <!-- Libraries Stylesheet -->
     <link href="<?=base_url()?>assets/freeuser/lib/animate/animate.min.css" rel="stylesheet">
-    <link href="<?=base_url()?>assets/freeuser/lib/owlcarousel/<?=base_url()?>assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="<?=base_url()?>assets/freeuser/lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="<?=base_url()?>assets/freeuser/css/bootstrap.min.css" rel="stylesheet">
@@ -60,11 +60,11 @@
                         <a href= "#tentang" class="nav-item nav-link">Tentang</a>
                         <a href="#alur" class="nav-item nav-link">Alur</a>
                         <a href="#media_patner" class="nav-item nav-link">Media Patner</a>
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                        <!-- <a href="#contact" class="nav-item nav-link">Contact</a> -->
                         <a href="<?=base_url()?>auth/login" class="nav-item nav-link">Login</a>
                     </div>
-                    <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
-                        data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                    <!-- <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
+                        data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton> -->
                 </div>
             </nav>
         </div>
@@ -124,28 +124,11 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Tentang Us</div>
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Tentang</div>
                     <h1 class="mb-4">Apa itu SIKOMET?</h1>
                     <p class="mb-4">SIKOMET (Sistem Informasi Komunikasi Media Secara Elektronik) merupakan inovasi dari Dinas Komunikasi Informatika
                             Statistik & Persandian Kabupaten Banjar, dalam rangka menjalankan tugas kerjasama media Pemerintah Kabupaten Banjar
-                            dengan media partner, secara transparan, efektif dan efisien.</p>
-                    <div class="row g-3">
-                        <div class="col-sm-6">
-                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Award Winning</h6>
-                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Professional Staff</h6>
-                        </div>
-                        <div class="col-sm-6">
-                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>24/7 Support</h6>
-                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mt-4">
-                        <a class="btn btn-primary rounded-pill px-4 me-3" href="">Read More</a>
-                        <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                            dengan media partner, secara transparan, efektif dan efisien.</p>                    
                 </div>
             </div>
         </div>
@@ -159,11 +142,9 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Alur Aplikasi</div>
-                    <h1 class="mb-4">Our Excellent AI Solutions for Your Business</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet</p>
-                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                    <h1 class="mb-4">Bagaimana Cara Kerja Aplikasi Ini?</h1>
+                    <p class="mb-">Kamu bisa bikin surat kerja sama dengan mudah di aplikasi ini. Selain itu, aplikasi ini juga bisa lihat langsung bagaimana berita dari media penyiaran sesuai dengan perjanjian atau tidak. Jadi, lebih simpel, lebih cepat, dan semua jadi lebih jelas!</p>
+                    <!-- <a class="btn btn-primary rounded-pill px-4" href="">Read More</a> -->
                 </div>
                 <div class="col-lg-7">
                     <div class="row g-4">
@@ -172,23 +153,21 @@
                                 <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
                                     <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                                         <div class="service-icon btn-square">
-                                            <i class="fa fa-robot fa-2x"></i>
+                                            <i class="fa fa-user-circle fa-2x"></i>
                                         </div>
-                                        <h5 class="mb-3">Robotic Automation</h5>
-                                        <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                                            diam sed stet lorem.</p>
-                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                        <h5 class="mb-3">STEP 1</h5>
+                                        <p>Registrasia akun dengan nama media, username, dan password.</p>
+                                         <!-- <a class="btn px-3 mt-auto mx-auto" href="">Read More</a> -->
                                     </div>
                                 </div>
                                 <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
                                     <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                                        <div class="service-icon btn-square">
-                                            <i class="fa fa-power-off fa-2x"></i>
+                                    <div class="service-icon btn-square">
+                                            <i class="fa fa-file-import fa-2x"></i>
                                         </div>
-                                        <h5 class="mb-3">Machine learning</h5>
-                                        <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                                            diam sed stet lorem.</p>
-                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                        <h5 class="mb-3">STEP 3</h5>
+                                        <p>Upload berkas-berkas pendukung untuk perjanjian kerjasama, setelah itu tunggu konfirmasi dari admin dan lanjut ajukan kerjasama.</p>
+                                         <!-- <a class="btn px-3 mt-auto mx-auto" href="">Read More</a> -->
                                     </div>
                                 </div>
                             </div>
@@ -197,24 +176,22 @@
                             <div class="row g-4">
                                 <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
                                     <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                                        <div class="service-icon btn-square">
-                                            <i class="fa fa-graduation-cap fa-2x"></i>
+                                    <div class="service-icon btn-square">
+                                            <i class="fa fa-edit fa-2x"></i>
                                         </div>
-                                        <h5 class="mb-3">Education & Science</h5>
-                                        <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                                            diam sed stet lorem.</p>
-                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                        <h5 class="mb-3">STEP 2</h5>
+                                        <p>Login dengan username dan password yang telah dibuat, lalu lengkapi porfile media anda.</p>
+                                         <!-- <a class="btn px-3 mt-auto mx-auto" href="">Read More</a> -->
                                     </div>
                                 </div>
                                 <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
                                     <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                                         <div class="service-icon btn-square">
-                                            <i class="fa fa-brain fa-2x"></i>
+                                            <i class="fa fa-arrow-circle-up fa-2x"></i>
                                         </div>
-                                        <h5 class="mb-3">Predictive Analysis</h5>
-                                        <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                                            diam sed stet lorem.</p>
-                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                        <h5 class="mb-3">STEP 4</h5>
+                                        <p>Perjanjian kerjasama disetjui, lalu anda dapat mengupload berita-berita sesuai dengan perjanjian kerjasama.</p>
+                                         <!-- <a class="btn px-3 mt-auto mx-auto" href="">Read More</a> -->
                                     </div>
                                 </div>
                             </div>
@@ -253,55 +230,6 @@
     </div>
     <!-- Case End -->
 
-        <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
-        <div class="container py-5">
-            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
-                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Contact Us</div>
-                <h1 class="mb-4">If You Have Any Query, Please Contact Us</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <p class="text-center mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                    <div class="wow fadeIn" data-wow-delay="0.3s">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
-
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer pt-5">
@@ -309,7 +237,7 @@
             <div class="row g-5">
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
                     <a href="#" class="d-inline-block mb-3">
-                        <h1 class="text-white">AI<span class="text-primary">.</span>Tech</h1>
+                        <h1 class="text-white">SI<span class="text-primary">.</span>KOMET</h1>
                     </a>
                     <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
                         amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus

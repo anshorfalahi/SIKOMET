@@ -13,6 +13,7 @@ class MDaftarBerita extends Model
     public function getBeritaByIdMedia($id_media)
     {
         return $this->where('id_media', $id_media)->findAll();
+        
     }
 
     public function getCountBeritaByMonth()

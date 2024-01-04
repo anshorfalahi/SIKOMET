@@ -46,12 +46,13 @@
                         <i class="bi bi-shield-lock"></i>
                     </div>
                 </div>
-                <div class="form-group position-relative has-icon-left mb-4">
-                    <select class="form-control form-control-xl" id="jenis_media" name="jenis_media">
+                <div class="form-group position-relative has-icon-left mb-4" hidden>
+                    <!-- <select class="form-control form-control-xl" id="jenis_media" name="jenis_media">
                         <option value="">Pilih Jenis Media</option>
                         <option value="Media Perorangan">Media Perorangan</option>
                         <option value="Media Perusahaan">Media Perusahaan</option>
-                    </select>
+                    </select> -->
+                    <input type="text" class="form-control form-control-xl" name="jenis_media" value="Media Perusahaan" readonly>
                     <div class="form-control-icon">
                         <i class="bi bi-briefcase"></i>
                     </div>
