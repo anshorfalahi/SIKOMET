@@ -11,7 +11,10 @@ class Dashboard extends BaseController
     {
         $id_akun = session()->get('id_akun');
         $builder = $this->db->table('tb_profile_media');
-        $id_media = $builder->where('id_akun', $id_akun)->get()->getRow()->id_media;
+        $id_media = null;
+        if (session()->get('level') == 'media') {
+            $id_media = $builder->where('id_akun', $id_akun)->get()->getRow()->id_media;
+        }
 
         $totalMedia = count((new MProfileMedia())->getAllProfileMedia());
         $totalMediaAktif = count((new MProfileMedia())->getAllProfileMediaAktif());
@@ -28,7 +31,6 @@ class Dashboard extends BaseController
         }
         $totalBerita1MediaPerTahun = (new MDaftarBerita())->getJumlahBeritaPerTahun($id_media);
         $totalBerita1MediaPerBulan = (new MDaftarBerita())->getJumlahBeritaPerBulanSekarang($id_media);
-
 
         $dataAdmin = [
             'title' => 'Dashboard',
