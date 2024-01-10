@@ -12,7 +12,6 @@ class PerjanjianKerjaSama extends BaseController
     {
         $model = new MPengajuanKerjaSama();
 
-
         $data = [
             'title' => 'Perjanjian Kerja Sama',
             'active' => 'perjanjian_kerja_sama',
@@ -29,7 +28,6 @@ class PerjanjianKerjaSama extends BaseController
         $builder = $this->db->table('tb_dkisp');
         $builder->select('*');
 
-
         $data = [
             'title' => 'Perjanjian Kerja Sama',
             'active' => 'perjanjian_kerja_sama',
@@ -39,34 +37,5 @@ class PerjanjianKerjaSama extends BaseController
 
         // print("<pre>" . print_r($data, true) . "</pre>");
         return view('pks', $data);
-    }
-
-    public function editKadis()
-    {
-        $model = new MDKISP();
-
-        $data = [
-            'title' => 'Perjanjian Kerja Sama',
-            'active' => 'perjanjian_kerja_sama',
-            'dkisp' => $model->findAll(),
-        ];
-
-        // print("<pre>" . print_r($data['dkisp'], true) . "</pre>");
-        return view('admin/ubah_kadis', $data);
-    }
-
-    public function processEditKadis()
-    {
-        $model = new MDKISP();
-
-        $data = [
-            'nama' => $this->request->getPost('nama_kadis'),
-            'nip' => $this->request->getPost('nip_kadis'),
-        ];
-
-        $model->update(1, $data);
-
-        session()->setFlashdata('success', 'Data berhasil diubah');
-        return redirect()->to(base_url() . 'perjanjian_kerja_sama/editKadis');
     }
 }

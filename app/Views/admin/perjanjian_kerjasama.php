@@ -23,7 +23,6 @@
     </div>
   <?php endif; ?>
     <div class="card-body">
-    <a href="<?= base_url() ?>perjanjian_kerja_sama/editKadis" class="btn btn-primary btn-sm" >Edit Kadis</a>
       <div class="table-responsive">
       <table class="table table-striped" id="table1">
         <thead>

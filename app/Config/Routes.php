@@ -41,8 +41,6 @@ $routes->post('/pengajuan_kerja_sama/deletePengajuanKerjaSama/(:num)', 'Pengajua
 
 $routes->get('/perjanjian_kerja_sama', 'PerjanjianKerjaSama::index');
 $routes->get('/perjanjian_kerja_sama/printPerjanjianKerjaSama/(:num)', 'PerjanjianKerjaSama::printPerjanjianKerjaSama/$1');
-$routes->get('/perjanjian_kerja_sama/editKadis', 'PerjanjianKerjaSama::editKadis');
-$routes->post('/perjanjian_kerja_sama/processEditKadis', 'PerjanjianKerjaSama::processEditKadis');
 
 $routes->get('/daftar_berita', 'DaftarBerita::index');
 $routes->get('/daftar_berita/tambah_berita', 'DaftarBerita::tambah_berita');
@@ -62,3 +60,7 @@ $routes->get('/kontribusi_wartawan/ubah_wartawan/(:num)', 'KontribusiWartawan::u
 $routes->post('/kontribusi_wartawan/updateWartawan/(:num)', 'KontribusiWartawan::updateWartawan/$1');
 $routes->post('/kontribusi_wartawan/deleteWartawan/(:num)', 'KontribusiWartawan::deleteWartawan/$1');
 $routes->get('/kontribusi_wartawan/print_kuitansi_wartawan/(:num)', 'KontribusiWartawan::print_kuitansi_wartawan/$1');
+
+$routes->get('/kelola_dkisp', 'DKISP::index');
+$routes->get('/kelola_dkisp/edit_dkisp/(:num)', 'DKISP::edit_dkisp/$1');
+$routes->post('/kelola_dkisp/prosesEditDkisp/(:num)', 'DKISP::prosesEditDkisp/$1');

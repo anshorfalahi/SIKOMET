@@ -88,6 +88,8 @@ class Filters extends BaseConfig
                 'perjanjian_kerja_sama/*',
                 'kontribusi_wartawan',
                 'kontribusi_wartawan/*',
+                'kelola_dkisp',
+                'kelola_dkisp/*',
             ]
         ],
         'MediaFilter' => ['before' => 
@@ -102,6 +104,8 @@ class Filters extends BaseConfig
                 'perjanjian_kerja_sama/*',
                 'kontribusi_wartawan',
                 'kontribusi_wartawan/*',
+                'kelola_dkisp',
+                'kelola_dkisp/*',
             ]
         ],
         'AdminFilter' => ['before' => 

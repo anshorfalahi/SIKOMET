@@ -25,9 +25,15 @@
             <span>Perjanjian Kerja Sama</span>
         </a>
     </li>
+    <li class="sidebar-item <?= ($active == 'kelola_dkisp') ? 'active' : '' ?> ">
+        <a href="<?= base_url('kelola_dkisp') ?>" class='sidebar-link'>
+            <i class="bi bi-globe2"></i>
+            <span>Kelola DKISP</span>
+        </a>
+    </li>
     <li class="sidebar-item <?= ($active == 'kontribusi_wartawan') ? 'active' : '' ?> ">
         <a href="<?= base_url('kontribusi_wartawan') ?>" class='sidebar-link'>
-            <i class="bi-person-lines-fill"></i>
+            <i class="bi bi-person-lines-fill"></i>
             <span>Kontribusi Wartawan</span>
         </a>
     </li>
