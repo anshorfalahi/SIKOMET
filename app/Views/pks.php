@@ -67,7 +67,7 @@
             </td>
             <td style="width: 616.859px; text-align: justify">
               <p>
-                <strong><?= $dkisp[0]['nama_kadis'] ?></strong><strong></strong>
+                <strong><?= $dkisp[0]['nama'] ?></strong><strong></strong>
               </p>
             </td>
           </tr>
@@ -82,7 +82,7 @@
               <p>:</p>
             </td>
             <td style="width: 616.859px; text-align: justify">
-              <p><?= $dkisp[0]['nip_kadis'] ?></p>
+              <p><?= $dkisp[0]['nip'] ?></p>
             </td>
           </tr>
           <tr>
@@ -405,8 +405,8 @@
             <td style="width: 370px; height: 76px">
               <p>
                 <strong
-                  ><u><?= $dkisp[0]['nama_kadis']?> <br /></u></strong
-                >Pembina Utama Muda<br />NIP. <?= $dkisp[0]['nip_kadis']?> 
+                  ><u><?= $dkisp[0]['nama']?> <br /></u></strong
+                >Pembina Utama Muda<br />NIP. <?= $dkisp[0]['nip']?> 
               </p>
             </td>
             <td style="width: 333.516px; height: 76px">

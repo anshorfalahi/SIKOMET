@@ -25,6 +25,12 @@
             <span>Perjanjian Kerja Sama</span>
         </a>
     </li>
+    <li class="sidebar-item <?= ($active == 'kontribusi_wartawan') ? 'active' : '' ?> ">
+        <a href="<?= base_url('kontribusi_wartawan') ?>" class='sidebar-link'>
+            <i class="bi-person-lines-fill"></i>
+            <span>Kontribusi Wartawan</span>
+        </a>
+    </li>
     <li class="sidebar-item <?= ($active == 'daftar_berita') ? 'active' : '' ?>">
         <a href="<?= base_url('daftar_berita_admin') ?>" class='sidebar-link'>
             <i class="bi bi-newspaper"></i>

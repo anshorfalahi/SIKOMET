@@ -55,3 +55,10 @@ $routes->get('/daftar_berita_admin', 'DaftarBeritaAdmin::index');
 $routes->get('/daftar_berita_admin/(:num)', 'DaftarBeritaAdmin::list_berita/$1');
 $routes->get('/daftar_berita_admin/all', 'DaftarBeritaAdmin::list_berita_all');
 
+$routes->get('/kontribusi_wartawan', 'KontribusiWartawan::index');
+$routes->get('/kontribusi_wartawan/tambah_wartawan', 'KontribusiWartawan::tambah_wartawan');
+$routes->post('/kontribusi_wartawan/addWartawan', 'KontribusiWartawan::addWartawan');
+$routes->get('/kontribusi_wartawan/ubah_wartawan/(:num)', 'KontribusiWartawan::ubah_wartawan/$1');
+$routes->post('/kontribusi_wartawan/updateWartawan/(:num)', 'KontribusiWartawan::updateWartawan/$1');
+$routes->post('/kontribusi_wartawan/deleteWartawan/(:num)', 'KontribusiWartawan::deleteWartawan/$1');
+$routes->get('/kontribusi_wartawan/print_kuitansi_wartawan/(:num)', 'KontribusiWartawan::print_kuitansi_wartawan/$1');

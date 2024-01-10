@@ -40,7 +40,7 @@
                                         <div class="col-md-9">
                                             <div class="form-group has-icon-left">
                                                 <div class="position-relative">
-                                                    <input type="text" class="form-control" name='nama_kadis' value="<?= $dkisp[0]['nama_kadis'] ?>" >
+                                                    <input type="text" class="form-control" name='nama_kadis' value="<?= $dkisp[0]['nama'] ?>" >
                                                     <div class="form-control-icon">
                                                         <i class="bi bi-person"></i>
                                                     </div>
@@ -53,7 +53,7 @@
                                         <div class="col-md-9">
                                             <div class="form-group has-icon-left">
                                                 <div class="position-relative">
-                                                    <input type="text" class="form-control" name='nip_kadis' value="<?= $dkisp[0]['nip_kadis'] ?>" >
+                                                    <input type="text" class="form-control" name='nip_kadis' value="<?= $dkisp[0]['nip'] ?>" >
                                                     <div class="form-control-icon">
                                                         <i class="bi bi-credit-card"></i>
                                                     </div>

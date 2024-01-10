@@ -60,11 +60,11 @@ class PerjanjianKerjaSama extends BaseController
         $model = new MDKISP();
 
         $data = [
-            'nama_kadis' => $this->request->getPost('nama_kadis'),
-            'nip_kadis' => $this->request->getPost('nip_kadis'),
+            'nama' => $this->request->getPost('nama_kadis'),
+            'nip' => $this->request->getPost('nip_kadis'),
         ];
 
-        $model->update(0, $data);
+        $model->update(1, $data);
 
         session()->setFlashdata('success', 'Data berhasil diubah');
         return redirect()->to(base_url() . 'perjanjian_kerja_sama/editKadis');
