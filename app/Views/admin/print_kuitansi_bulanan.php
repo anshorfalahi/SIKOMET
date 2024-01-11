@@ -128,7 +128,7 @@
                     <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:1.25em;'><strong><span style='font-family:"Arial",sans-serif;'>:</span></strong></p>
                 </td>
                 <td colspan="4" style="width: 68.427%; padding: 0cm 5.4pt; vertical-align: top;">
-                    <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:1.25em;'><strong><span style='font-size:19px;line-height:1.25em;font-family:"Arial",sans-serif;'>Rp. &nbsp; &nbsp;  500.000,-</span></strong><strong><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></strong></p>
+                    <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:1.25em;'><strong><span style='font-size:19px;line-height:1.25em;font-family:"Arial",sans-serif;'>Rp. &nbsp; &nbsp;  <?= $total_uang?>,-</span></strong><strong><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></strong></p>
                 </td>
             </tr>
             <tr>
@@ -139,7 +139,7 @@
                     <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:1.25em;'><strong><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></strong></p>
                 </td>
                 <td colspan="4" style="width: 68.427%; padding: 0cm 5.4pt; vertical-align: top;">
-                    <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:1.25em;'><span style='font-family:"Arial",sans-serif;'>Terbilang : Lima Ratus Ribu Rupiah</span></p>
+                    <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:1.25em;'><span style='font-family:"Arial",sans-serif;' id="terbilang"></span></p>
                     <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:1.25em;'><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></p>
                 </td>
             </tr>
@@ -151,7 +151,7 @@
                     <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:1.25em;'><strong><span style='font-family:"Arial",sans-serif;'>:</span></strong></p>
                 </td>
                 <td colspan="4" style="width: 68.427%; padding: 0cm 5.4pt; vertical-align: top;">
-                    <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;line-height:1.25em;'><span style='font-family:"Arial",sans-serif;'>Kontribusi Pers/Wartawan Kabupaten Banjar An. <?="<strong>" . $wartawan['nama_wartawan'] ." Ub. " . date('F Y') . "</strong>" ?> Bidang Pengelolaan Informasi dan Komunikasi Publik Dengan kelengkapan dokumen terlampir</span></p>
+                    <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;line-height:1.25em;'><span style='font-family:"Arial",sans-serif;'>Pembayaran Belanja Kontibusi Pers/Wartawan Kabupaten Banjar Ub. <?= date('F Y') ?> Sebanyak <?= $total_wartawan?>  Media x Rp. 500.000,- Berdasarkan Keputusan Bupati Banjar Noor ; 188.45/8/KUM/2023 Tanggal 02 Januari 2023</span></p>
                     <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;line-height:1.25em;'><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></p>
                 </td>
             </tr>
@@ -179,13 +179,14 @@
                     <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:1.25em;'><span style='font-family:"Arial",sans-serif;'>Martapura, &nbsp; &nbsp; &nbsp; &nbsp;<?= date('F Y'); ?></span></p>
                     <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:1.25em;'><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></p>
                     <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:1.25em;'><span style='font-family:"Arial",sans-serif;'>Yang Menerima,</span></p>
-                    <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;margin-left:1.65pt;text-indent:-1.65pt;'><span style='font-family:"Arial",sans-serif;'>
+                    <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;'><span style='font-family:"Arial",sans-serif;'>Pejabat Pelaksana Teknis Kegiatan</span></p>
                     <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:1.25em;'><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></p>
                     <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:1.25em;'><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></p>
                     <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:1.25em;'><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></p>
                     <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:1.25em;'><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></p>
-                    <p>..................................................</p>
-                    <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:1.25em;'><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></p>
+                    <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;'><span style='font-family:"Arial",sans-serif;'><?= strtoupper($dkisp[1]['nama']); ?></span></p>
+                    <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;'><span style='font-family:"Arial",sans-serif;'><?= $dkisp[1]['keterangan']; ?></span></p>
+                    <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;'><span style='font-family:"Arial",sans-serif;'>NIP. <?= $dkisp[1]['nip']; ?></span></p>
                 </td>
             </tr>
             <tr>
@@ -216,9 +217,21 @@
             </tr>
         </tbody>
     </table>
+    <input type="hidden" name="total_uang" id="total_uang" value="<?= $total_uang ?>">
 </body>
+<script src="https://unpkg.com/@develoka/angka-terbilang-js/index.min.js"> </script>
 <script>
     window.print();
+    var total_uang = document.getElementById('total_uang').value;
+    var cleanRupiah = total_uang.replace(/\./g, '');
+    var terbilang = angkaTerbilang(cleanRupiah);
+    //ubah terbilang menjadi kapital pada huruf pertama pada semua kata
+    var terbilang_upper = terbilang.replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+    var terbilang_rupiah = ('Terbilang : ' + terbilang_upper + ' Rupiah')
+    document.getElementById('terbilang').innerHTML = terbilang_rupiah;
 </script>
+
 
 </html>

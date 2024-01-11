@@ -23,6 +23,7 @@
   <div class="card">
     <div class="card-body">
     <a href="<?= base_url() ?>kontribusi_wartawan/tambah_wartawan" class="btn btn-primary mb-2">Tambah Wartawan</a>
+    <a href="<?= base_url() ?>kontribusi_wartawan/print_kuitansi_bulanan" class="btn btn-primary mb-2" target="_blank">Print Kuitansi Bulanan</a>
       <table class="table table-striped" id="table1">
         <thead>
           <tr>
@@ -47,7 +48,7 @@
               <a href="<?= base_url() ?>berkas/<?= $row['berkas'] ?>" download="<?= $row['berkas'] ?>" class="btn btn-success btn-sm"><i class="bi bi-download"></i> Download</a>
             </td>
             <td>
-              <a href="<?= base_url() ?>kontribusi_wartawan/print_kuitansi_wartawan/<?= $row['id_wartawan'] ?>" class="btn btn-primary btn-sm"><i class="bi bi-printer"></i> Print Kuitansi</a>
+              <a href="<?= base_url() ?>kontribusi_wartawan/print_kuitansi_wartawan/<?= $row['id_wartawan'] ?>" class="btn btn-primary btn-sm" target="_blank"><i class="bi bi-printer"></i> Print Kuitansi</a>
               <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#delete<?= $row['id_wartawan'] ?>"><i class="bi bi-trash"></i> Hapus</button>
             </td>
           </tr>

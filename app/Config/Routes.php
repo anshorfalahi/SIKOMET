@@ -60,6 +60,7 @@ $routes->get('/kontribusi_wartawan/ubah_wartawan/(:num)', 'KontribusiWartawan::u
 $routes->post('/kontribusi_wartawan/updateWartawan/(:num)', 'KontribusiWartawan::updateWartawan/$1');
 $routes->post('/kontribusi_wartawan/deleteWartawan/(:num)', 'KontribusiWartawan::deleteWartawan/$1');
 $routes->get('/kontribusi_wartawan/print_kuitansi_wartawan/(:num)', 'KontribusiWartawan::print_kuitansi_wartawan/$1');
+$routes->get('/kontribusi_wartawan/print_kuitansi_bulanan', 'KontribusiWartawan::print_kuitansi_bulanan');
 
 $routes->get('/kelola_dkisp', 'DKISP::index');
 $routes->get('/kelola_dkisp/edit_dkisp/(:num)', 'DKISP::edit_dkisp/$1');

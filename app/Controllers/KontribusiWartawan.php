@@ -80,4 +80,19 @@ class KontribusiWartawan extends BaseController
 
         return view('admin/print_kuitansi_wartawan', $data);
     }
+
+    public function print_kuitansi_bulanan()
+    {
+        $wartawan = new MWartawan();
+        $dkisp = new MDKISP();
+
+        $data = [
+            'dkisp' => $dkisp->findAll(),
+            'total_wartawan' => $wartawan->getTotalWartawan(),
+            'total_uang' => $wartawan->getTotalUang()
+        ];
+        // print("<pre>" . print_r($data, true) . "</pre>");
+
+        return view('admin/print_kuitansi_bulanan', $data);
+    }
 }
