@@ -31,6 +31,8 @@
             <th>Nama Wartawan</th>
             <th>No. Handphone</th>
             <th>No. Rekening</th>
+            <th>Nama Media</th>
+            <th>Nama Perusahaan</th>
             <th>Berkas</th>
             <th>Aksi</th>
           </tr>
@@ -43,12 +45,16 @@
             <td><?= $row['nama_wartawan'] ?></td>
             <td><?= $row['no_hp'] ?></td>
             <td><?= $row['no_rek'] ?></td>
+            <td><?= $row['nama_media'] ?></td>
+            <td><?= $row['nama_perusahaan'] ?></td>
+
             <td>
-              <a href="<?= base_url() ?>berkas/<?= $row['berkas'] ?>" target="_blank" class="btn btn-info btn-sm"><i class="bi bi-file-earmark-pdf"></i> Lihat Berkas</a>
+              <a href="<?= base_url() ?>berkas/<?= $row['berkas'] ?>" target="_blank" class="btn btn-info btn-sm" name='berkaslama'><i class="bi bi-file-earmark-pdf"></i> Lihat Berkas</a>
               <a href="<?= base_url() ?>berkas/<?= $row['berkas'] ?>" download="<?= $row['berkas'] ?>" class="btn btn-success btn-sm"><i class="bi bi-download"></i> Download</a>
             </td>
             <td>
-              <a href="<?= base_url() ?>kontribusi_wartawan/print_kuitansi_wartawan/<?= $row['id_wartawan'] ?>" class="btn btn-primary btn-sm" target="_blank"><i class="bi bi-printer"></i> Print Kuitansi</a>
+              <a href="<?= base_url() ?>kontribusi_wartawan/print_kuitansi_wartawan/<?= $row['id_wartawan'] ?>" class="btn btn-primary btn-sm" target="_blank"><i class="bi bi-printer"></i> Print</a>
+              <a href="<?= base_url() ?>kontribusi_wartawan/ubah_wartawan/<?= $row['id_wartawan'] ?>" class="btn btn-warning btn-sm"><i class="bi bi-pencil-square"></i> Ubah</a>
               <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#delete<?= $row['id_wartawan'] ?>"><i class="bi bi-trash"></i> Hapus</button>
             </td>
           </tr>
@@ -65,7 +71,7 @@
   <div class="modal fade" id="delete<?=$row['id_wartawan']?>" tabindex="-1" aria-labelledby="delete<?=$row['id_wartawan']?>Label" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <form method="post" action="<?=site_url('kontribusi_wartawan/delete/'.$row['id_wartawan'])?>">
+        <form method="post" action="<?=site_url('kontribusi_wartawan/deleteWartawan/'.$row['id_wartawan'])?>">
           <div class="modal-header">
             <h5 class="modal-title" id="delete<?=$row['id_wartawan']?>Label">Hapus Data Wartawan</h5>
           </div>

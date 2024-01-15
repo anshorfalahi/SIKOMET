@@ -41,6 +41,7 @@ $routes->post('/pengajuan_kerja_sama/deletePengajuanKerjaSama/(:num)', 'Pengajua
 
 $routes->get('/perjanjian_kerja_sama', 'PerjanjianKerjaSama::index');
 $routes->get('/perjanjian_kerja_sama/printPerjanjianKerjaSama/(:num)', 'PerjanjianKerjaSama::printPerjanjianKerjaSama/$1');
+$routes->get('/perjanjian_kerja_sama/printKuitansiPKS/(:num)', 'PerjanjianKerjaSama::printKuitansiPKS/$1');
 
 $routes->get('/daftar_berita', 'DaftarBerita::index');
 $routes->get('/daftar_berita/tambah_berita', 'DaftarBerita::tambah_berita');
@@ -56,7 +57,7 @@ $routes->get('/daftar_berita_admin/all', 'DaftarBeritaAdmin::list_berita_all');
 $routes->get('/kontribusi_wartawan', 'KontribusiWartawan::index');
 $routes->get('/kontribusi_wartawan/tambah_wartawan', 'KontribusiWartawan::tambah_wartawan');
 $routes->post('/kontribusi_wartawan/addWartawan', 'KontribusiWartawan::addWartawan');
-$routes->get('/kontribusi_wartawan/ubah_wartawan/(:num)', 'KontribusiWartawan::ubah_wartawan/$1');
+$routes->get('/kontribusi_wartawan/ubah_wartawan/(:num)', 'KontribusiWartawan::ubahWartawan/$1');
 $routes->post('/kontribusi_wartawan/updateWartawan/(:num)', 'KontribusiWartawan::updateWartawan/$1');
 $routes->post('/kontribusi_wartawan/deleteWartawan/(:num)', 'KontribusiWartawan::deleteWartawan/$1');
 $routes->get('/kontribusi_wartawan/print_kuitansi_wartawan/(:num)', 'KontribusiWartawan::print_kuitansi_wartawan/$1');

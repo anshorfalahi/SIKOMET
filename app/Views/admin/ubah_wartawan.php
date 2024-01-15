@@ -16,7 +16,7 @@
 <div class="col-12">
         <div class="card">
             <div class="card-header">
-                <h4 class="card-title">Tambah Wartawan</h4>
+                <h4 class="card-title">Ubah Data Wartawan</h4>
             </div>
             <div class="card-content">
                 <?php if (session()->getFlashdata('success')) : ?>
@@ -31,7 +31,7 @@
                 </div>
                 <?php endif ?>
                 <div class="card-body">
-                    <form class="form form-horizontal" action="<?= base_url() ?>/kontribusi_wartawan/addWartawan" method="post" enctype="multipart/form-data">
+                    <form class="form form-horizontal" action="<?= base_url() ?>/kontribusi_wartawan/updateWartawan/<?= $wartawan['id_wartawan'] ?>" method="post" enctype="multipart/form-data">
                         <div class="form-body">
                             <div class="row">
                                 <div class="col-md-3">
@@ -40,7 +40,7 @@
                                 <div class="col-md-9">
                                     <div class="form-group has-icon-left">
                                         <div class="position-relative">
-                                            <input type="text" class="form-control" name='nama_wartawan' value="" required>     
+                                            <input type="text" class="form-control" name='nama_wartawan' value="<?= $wartawan['nama_wartawan'] ?>" required>   
                                             <div class="form-control-icon">
                                                 <i class="bi bi-justify"></i>
                                             </div>
@@ -53,7 +53,7 @@
                                 <div class="col-md-9">
                                     <div class="form-group has-icon-left">
                                         <div class="position-relative">
-                                            <input type="text" class="form-control" name='no_hp' value="" required>
+                                            <input type="text" class="form-control" name='no_hp' value="<?= $wartawan['no_hp'] ?>" required>
                                             <div class="form-control-icon">
                                                 <i class="bi bi-link-45deg"></i>
                                             </div>
@@ -66,7 +66,7 @@
                                 <div class="col-md-9">
                                     <div class="form-group has-icon-left">
                                         <div class="position-relative">
-                                            <input type="text" class="form-control" name='no_rek' value="" required>
+                                            <input type="text" class="form-control" name='no_rek' value="<?= $wartawan['no_rek'] ?>" required>
                                             <div class="form-control-icon">
                                                 <i class="bi bi-link-45deg"></i>
                                             </div>
@@ -79,7 +79,7 @@
                                 <div class="col-md-9">
                                     <div class="form-group has-icon-left">
                                         <div class="position-relative">
-                                            <input type="text" class="form-control" name='nama_media' value="" required>
+                                            <input type="text" class="form-control" name='nama_media' value="<?= $wartawan['nama_media'] ?>" required>
                                             <div class="form-control-icon">
                                                 <i class="bi bi-link-45deg"></i>
                                             </div>
@@ -92,7 +92,7 @@
                                 <div class="col-md-9">
                                     <div class="form-group has-icon-left">
                                         <div class="position-relative">
-                                            <input type="text" class="form-control" name='nama_perusahaan' value="" required>
+                                            <input type="text" class="form-control" name='nama_perusahaan' value="<?= $wartawan['nama_perusahaan'] ?>" required>
                                             <div class="form-control-icon">
                                                 <i class="bi bi-link-45deg"></i>
                                             </div>
@@ -105,8 +105,10 @@
                                 <div class="col-md-9">
                                     <div class="form-group">
                                         <div class="position-relative">
-                                        <input type="file" name="berkas" class="basic-filepond0" required>
+                                        <input type="file" name="berkas" class="basic-filepond"  value="<?= $wartawan['berkas'] ?>" >
                                         <p>Format Pdf Max Size 5120kb</p>
+                                        <a href="<?= base_url() ?>berkas/<?= $wartawan['berkas'] ?>" target="_blank" class="btn btn-info btn-sm"><i class="bi bi-file-earmark-pdf"></i> Lihat Berkas Lama</a>
+                                        <input type="text" name="berkaslama" value="<?= $wartawan['berkas'] ?>" hidden>
                                         <p id="errorMessage" style="color: red;"></p>
                                         </div>
                                     </div>

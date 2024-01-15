@@ -20,6 +20,16 @@ FilePond.create(document.querySelector(".basic-filepond"), {
   required: false,
   storeAsFile: true,
 })
+FilePond.create(document.querySelector(".basic-filepond0"), {
+  credits: null,
+  allowImagePreview: false,
+  allowMultiple: false,
+  allowFileEncode: false,
+  maxFileSize: "5MB",
+  acceptedFileTypes: ["application/pdf"],
+  required: true,
+  storeAsFile: true,
+})
 FilePond.create(document.querySelector(".basic-filepond1"), {
   credits: null,
   allowImagePreview: false,

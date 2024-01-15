@@ -38,4 +38,21 @@ class PerjanjianKerjaSama extends BaseController
         // print("<pre>" . print_r($data, true) . "</pre>");
         return view('pks', $data);
     }
+
+    public function printKuitansiPKS($id_media)
+    {
+        $model = new MPengajuanKerjaSama();
+        $builder = $this->db->table('tb_dkisp');
+        $builder->select('*');
+
+        $data = [
+            'title' => 'Kuitansi PKS',
+            'active' => 'perjanjian_kerja_sama',
+            'pks' => $model->getPengajuanKerjaSama($id_media)->getResultArray(),
+            'dkisp' => $builder->get()->getResultArray(),
+        ];
+
+        // print("<pre>" . print_r($data, true) . "</pre>");
+        return view('kuitansi_pks', $data);
+    }
 }
