@@ -28,5 +28,10 @@ class MWartawan extends Model
         $wartawan = $this->find($id);
         unlink('berkas/' . $wartawan['berkas']);
     }
+
+    public function getAllNamaMediaID()
+    {
+        return $this->select('id_wartawan, nama_media')->distinct()->get()->getResultArray();
+    }
 }
 

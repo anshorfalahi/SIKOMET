@@ -35,7 +35,6 @@
             <th>Tarif Pemasangan</th>
             <th>Minimal Berita Perbulan</th>
             <th>Jenis Berita</th>
-            <!-- <th>Status</th> -->
             <th>Aksi</th>
           </tr>
         </thead>
@@ -51,7 +50,6 @@
             <td><?= $row['tarif_pks'] ?></td>
             <td><?= $row['minimal_berita'] ?></td>
             <td><?= $row['jenis_berita'] ?></td>
-            <!-- <td><?= $row['status_ajuan'] ?></td> -->
             <td style="text-align: center;">
               <a href="<?= base_url() ?>perjanjian_kerja_sama/printPerjanjianKerjaSama/<?= $row['id_media'] ?>" class="btn btn-primary btn-sm" target="_blank" style="margin-bottom: 5px;"><i class="bi bi-printer"></i>Print PKS</a>
               <a href="<?= base_url() ?>perjanjian_kerja_sama/printKuitansiPKS/<?= $row['id_media'] ?>" class="btn btn-success btn-sm" target="_blank"><i class="bi bi-printer"></i>Print Kuitansi</a>

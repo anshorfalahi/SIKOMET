@@ -34,7 +34,6 @@
             <th>Tarif Pemasangan</th>
             <th>Minimal Berita Perbulan</th>
             <th>Jenis Berita</th>
-            <th>Status</th>
             <th>Aksi</th>
           </tr>
         </thead>
@@ -46,7 +45,6 @@
             <td><?= $pks['tarif_pks'] ?></td>
             <td><?= $pks['minimal_berita'] ?></td>
             <td><?= $pks['jenis_berita'] ?></td>
-            <td><?= $pks['status_ajuan'] ?></td>
             <td>
               <a href="<?= base_url() ?>pengajuan_kerja_sama/ubah_pengajuan_kerjasama/<?= $pks['id_pks'] ?>" class="btn btn-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
               <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#delete<?= $pks['id_pks'] ?>"><i class="bi bi-trash"></i></button>

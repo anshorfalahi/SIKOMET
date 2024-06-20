@@ -82,14 +82,18 @@ class Filters extends BaseConfig
                 'validasi_berkas/*',
                 'pengajuan_kerja_sama',
                 'pengajuan_kerja_sama/*',
-                'daftar_berita',
-                'daftar_berita/*',
+                'daftar_berita_kontribusi',
+                'daftar_berita_kontribusi/*',
                 'perjanjian_kerja_sama',
                 'perjanjian_kerja_sama/*',
                 'kontribusi_wartawan',
                 'kontribusi_wartawan/*',
                 'kelola_dkisp',
                 'kelola_dkisp/*',
+                'daftar_berita_wartawan',
+                'daftar_berita_wartawan/*',
+                'daftar_berita',
+                'daftar_berita/*',
             ]
         ],
         'MediaFilter' => ['before' => 
@@ -114,6 +118,7 @@ class Filters extends BaseConfig
                 'auth/register',
                 'profile_media',
                 'upload_berkas',
+                'daftar_berita',
                 'pengajuan_kerja_sama',
                 'pengajuan_kerja_sama/*',
             ]

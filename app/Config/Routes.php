@@ -50,9 +50,16 @@ $routes->get('/daftar_berita/ubah_berita/(:num)', 'DaftarBerita::ubah_berita/$1'
 $routes->post('/daftar_berita/updateBerita/(:num)', 'DaftarBerita::updateBerita/$1');
 $routes->post('/daftar_berita/deleteBerita/(:num)', 'DaftarBerita::deleteBerita/$1');
 
-$routes->get('/daftar_berita_admin', 'DaftarBeritaAdmin::index');
-$routes->get('/daftar_berita_admin/(:num)', 'DaftarBeritaAdmin::list_berita/$1');
-$routes->get('/daftar_berita_admin/all', 'DaftarBeritaAdmin::list_berita_all');
+$routes->get('/daftar_berita_kontribusi', 'DaftarBeritaAdmin::index');
+$routes->get('/daftar_berita_kontribusi/(:num)', 'DaftarBeritaAdmin::list_berita/$1');
+$routes->get('/daftar_berita_kontribusi/all', 'DaftarBeritaAdmin::list_berita_all');
+
+$routes->get('/daftar_berita_wartawan', 'DaftarBeritaAdmin::daftar_berita_wartawan');
+$routes->get('/daftar_berita_wartawan/tambah_berita_wartawan', 'DaftarBeritaAdmin::tambah_berita_wartawan');
+$routes->post('/daftar_berita_wartawan/insertBerita', 'DaftarBeritaAdmin::insertBerita');
+$routes->get('/daftar_berita_wartawan/ubah_berita/(:num)', 'DaftarBeritaAdmin::ubah_berita_wartawan/$1');
+$routes->post('/daftar_berita_wartawan/updateBerita/(:num)', 'DaftarBeritaAdmin::updateBerita/$1');
+$routes->post('/daftar_berita_wartawan/deleteBerita/(:num)', 'DaftarBeritaAdmin::deleteBerita/$1');
 
 $routes->get('/kontribusi_wartawan', 'KontribusiWartawan::index');
 $routes->get('/kontribusi_wartawan/tambah_wartawan', 'KontribusiWartawan::tambah_wartawan');

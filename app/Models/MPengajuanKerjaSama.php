@@ -8,7 +8,7 @@ class MPengajuanKerjaSama extends Model
 {
     protected $table            = 'tb_pks';
     protected $primaryKey       = 'id_pks';
-    protected $allowedFields    = ['id_media', 'masa_pks', 'masa_jangka_pks', 'tarif_pks', 'minimal_berita', 'jenis_berita', 'status_ajuan'];
+    protected $allowedFields    = ['id_media', 'masa_pks', 'masa_jangka_pks', 'tarif_pks', 'minimal_berita', 'jenis_berita'];
 
     public function insertPengajuanKerjaSama($data)
     {

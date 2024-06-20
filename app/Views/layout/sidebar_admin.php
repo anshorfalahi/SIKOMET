@@ -37,11 +37,19 @@
             <span>Kontribusi Wartawan</span>
         </a>
     </li>
-    <li class="sidebar-item <?= ($active == 'daftar_berita') ? 'active' : '' ?>">
-        <a href="<?= base_url('daftar_berita_admin') ?>" class='sidebar-link'>
+    <li class="sidebar-item has-sub <?= ($active == 'daftar_berita') ? 'active' : '' ?>" >
+        <a href="#" class='sidebar-link'>
             <i class="bi bi-newspaper"></i>
             <span>Daftar Berita</span>
         </a>
+        <ul class="submenu <?= ($active == 'daftar_berita') ? 'active' : '' ?>">
+            <li class="submenu-item ">
+                <a href="<?= base_url('daftar_berita_kontribusi') ?>">Berita Kontribusi</a>
+            </li>
+            <li class="submenu-item ">
+                <a href="<?= base_url('daftar_berita_wartawan') ?>">Berita Wartawan</a>
+            </li>
+        </ul>
     </li>
     <li class="sidebar-item ">
         <a href="<?= base_url('auth/logout') ?>" class='sidebar-link'>
